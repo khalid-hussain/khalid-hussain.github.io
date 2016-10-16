@@ -1,0 +1,8 @@
+.content > figure{
+  text-align: center;
+}
+
+.content > figure > figcaption > h4::before {
+  content: "";
+  color: red;
+}
