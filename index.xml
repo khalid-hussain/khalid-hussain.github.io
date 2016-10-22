@@ -6,8 +6,249 @@
     <description>Recent content on Mohammad Khalid Hussain</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 08 Oct 2016 12:33:41 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 17 Oct 2016 08:43:27 +0800</lastBuildDate>
     <atom:link href="http://khalid-hussain.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Getting to know Microsoft Word Styles</title>
+      <link>http://khalid-hussain.github.io/post/microsoft-word-styles/</link>
+      <pubDate>Mon, 17 Oct 2016 08:43:27 +0800</pubDate>
+      
+      <guid>http://khalid-hussain.github.io/post/microsoft-word-styles/</guid>
+      <description>
+
+&lt;p&gt;After proofreading a number of theses and articles, I&amp;rsquo;ve found that most
+students in IIUM don&amp;rsquo;t know how to use (Microsoft Word) styles to add structure
+to their documents. This short article will get you familiar with using Microsoft Word styles. We will be using Microsoft Word 2013 on Windows, however, this should also apply to Microsoft Word 2016.&lt;/p&gt;
+
+&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
+
+&lt;p&gt;Document styles are a way to add semantic structure to your documents. This
+provides several benefits:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Helps in automatically creating a &amp;lsquo;Table of Contents&amp;rsquo;, &amp;lsquo;List of Figures&amp;rsquo;, and
+&amp;lsquo;List of Tables&amp;rsquo;. You will also make no mistakes in numbering headings and
+subheadings, given that all of them are defined properly.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Helps in editing several items of the same &amp;lsquo;style&amp;rsquo; at once, which in turn
+saves time and ensures that the formatting is applied throughout.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Enables one to easily export a Microsoft Word document to other formats, such
+as &lt;code&gt;EPUB&lt;/code&gt; for ebook readers.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Makes one more conscious of the document structure which in turn improves
+one&amp;rsquo;s writing.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;The options for &amp;lsquo;styles&amp;rsquo; can be seen from the &amp;lsquo;HOME&amp;rsquo; tab in the document window.
+The default selection window is quite limited in that only a few styles are
+shown at a time and not all styles are shown.&lt;/p&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;./images/ms-word-styles/ribbon-styles-highlight.png&#34; /&gt;
+    
+    
+    &lt;figcaption&gt;
+        &lt;h4&gt;Styles section in Home tab of Microsoft Word&lt;/h4&gt;
+        
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+
+
+&lt;h1 id=&#34;styles-pane&#34;&gt;Styles Pane&lt;/h1&gt;
+
+&lt;p&gt;However, you can open the dedicated Styles pane by pressing the small arrow on
+the bottom right of the Styles section. The Styles pane lists all the styles
+available for the current document.&lt;/p&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;./images/ms-word-styles/styles-arrow.png&#34; /&gt;
+    
+    
+    &lt;figcaption&gt;
+        &lt;h4&gt;Styles Pane arrow&lt;/h4&gt;
+        
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+
+
+&lt;p&gt;After clicking the arrow, you will be presented with a separate Styles pane that
+will list all styles used in the current document.&lt;/p&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;./images/ms-word-styles/styles-pane.png&#34; /&gt;
+    
+    
+    &lt;figcaption&gt;
+        &lt;h4&gt;Styles Pane&lt;/h4&gt;
+        
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+
+
+&lt;p&gt;New styles can be created and current styles can be edited by right-clicking a
+listed style and clicking &amp;ldquo;Modify&amp;hellip;&amp;rdquo;.&lt;/p&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;./images/ms-word-styles/modify-style-dialog.png&#34; /&gt;
+    
+    
+    &lt;figcaption&gt;
+        &lt;h4&gt;Modify Style dialog&lt;/h4&gt;
+        
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+
+
+&lt;h1 id=&#34;simple-example&#34;&gt;Simple Example&lt;/h1&gt;
+
+&lt;p&gt;Let&amp;rsquo;s try a simple example. Open a new document and write out a few paragraphs
+along with a few headings.&lt;/p&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;./images/ms-word-styles/simple-example.png&#34; /&gt;
+    
+    
+    &lt;figcaption&gt;
+        &lt;h4&gt;Simple document&lt;/h4&gt;
+        
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+
+
+&lt;p&gt;Now apply &amp;ldquo;Heading 1&amp;rdquo; styles to all your headings by highlighting your headings
+one by one and then selecting the style &amp;ldquo;Heading 1&amp;rdquo; from the Styles pane. You
+should have something as follows.&lt;/p&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;./images/ms-word-styles/simple-example-headings.png&#34; /&gt;
+    
+    
+    &lt;figcaption&gt;
+        &lt;h4&gt;Simple document with &amp;#34;heading 1&amp;#34; styles&lt;/h4&gt;
+        
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+
+
+&lt;h1 id=&#34;what-now&#34;&gt;What Now?&lt;/h1&gt;
+
+&lt;p&gt;Here are a few things you can try out immediately with your simple example
+document.&lt;/p&gt;
+
+&lt;h2 id=&#34;generating-table-of-contents&#34;&gt;Generating Table of Contents&lt;/h2&gt;
+
+&lt;p&gt;To generate a &amp;ldquo;Table of Contents&amp;rdquo; for the document, head to the beginning of the
+document, click on the &amp;ldquo;References&amp;rdquo; tab and select the &amp;ldquo;Table of Contents&amp;rdquo;
+option. It is highlighted in the screenshot below.&lt;/p&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;./images/ms-word-styles/table-of-contents.png&#34; /&gt;
+    
+    
+    &lt;figcaption&gt;
+        &lt;h4&gt;Table of Contents option&lt;/h4&gt;
+        
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+
+
+&lt;p&gt;Select a &amp;ldquo;Table of Contents&amp;rdquo; style and you should have something as follows.&lt;/p&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;./images/ms-word-styles/table-of-contents-preview.png&#34; /&gt;
+    
+    
+    &lt;figcaption&gt;
+        &lt;h4&gt;Table of Contents Preview&lt;/h4&gt;
+        
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+
+
+&lt;p&gt;Great things to note, page numbers can be automatically updated as you continue
+writing your document, you &lt;strong&gt;do not&lt;/strong&gt; have to manually input page numbers in
+your &amp;ldquo;Table of Contents&amp;rdquo;. Similarly, all your headings, sub-headings, and sub-
+sub-headings, are automatically detected and updated in the &amp;ldquo;Table of Contents&amp;rdquo;
+as you write your document. Update of the &amp;ldquo;Table of Contents&amp;rdquo; is not live
+though, so every time you want to update your &amp;ldquo;Table of Contents&amp;rdquo;, head over to
+your &amp;ldquo;Table of Contents&amp;rdquo; and click on the &amp;ldquo;Update Table&amp;hellip;&amp;rdquo; option. This can be
+seen in the following screenshot.&lt;/p&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;./images/ms-word-styles/table-of-contents-update.png&#34; /&gt;
+    
+    
+    &lt;figcaption&gt;
+        &lt;h4&gt;Updating Table of Contents&lt;/h4&gt;
+        
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+
+
+&lt;p&gt;Clicking on the option presents a dialog with two options, namely, &amp;ldquo;Update page
+numbers only&amp;rdquo; and &amp;ldquo;Update entire table&amp;rdquo;. The former is good if no need headings
+were added to your document since the last time the Table of Contents was
+updated. The latter on the other hand should be used if new headings have been
+added to your document.&lt;/p&gt;
+
+&lt;h2 id=&#34;change-document-theme&#34;&gt;Change document theme&lt;/h2&gt;
+
+&lt;p&gt;Since your document is properly structured, changing themes is mostly a single-
+click affair. To try out a few different themes/designs, head over to the
+&amp;ldquo;Design&amp;rdquo; tab and try some of the different themes available. The simple example
+document is shown below with a different theme than the default.&lt;/p&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;./images/ms-word-styles/simple-example-theme.png&#34; /&gt;
+    
+    
+    &lt;figcaption&gt;
+        &lt;h4&gt;Simple Example with different theme&lt;/h4&gt;
+        
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+
+
+&lt;h1 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h1&gt;
+
+&lt;p&gt;I hope this short article is enough for introducing the concept of document
+styles in Microsoft Word and that you can make good use of them in your future
+documents. I&amp;rsquo;m still working on the comment system, so if you have any
+suggestions or comments, please send them directly to my GitHub account.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Welcome</title>
