@@ -1,13 +1,109 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Post-rsses on Mohammad Khalid Hussain</title>
+    <title>Post-rsses on Khalid Hussain</title>
     <link>http://khalid-hussain.github.io/post/index.xml</link>
-    <description>Recent content in Post-rsses on Mohammad Khalid Hussain</description>
+    <description>Recent content in Post-rsses on Khalid Hussain</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 17 Oct 2016 08:43:27 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 25 Oct 2016 16:19:53 +0800</lastBuildDate>
     <atom:link href="http://khalid-hussain.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Digital Salawāt on the Prophet (ﷺ)</title>
+      <link>http://khalid-hussain.github.io/post/digital-salawat-on-the-prophet/</link>
+      <pubDate>Tue, 25 Oct 2016 16:19:53 +0800</pubDate>
+      
+      <guid>http://khalid-hussain.github.io/post/digital-salawat-on-the-prophet/</guid>
+      <description>
+
+&lt;p&gt;This article will help introduce you to the different methods of sending salutations upon the greatest man to have ever lived, Prophet Muḥammad (Peace be upon him), along with some of the complications that occur due to intricacies of computers. The article will not discuss the issue from a fiqh perspective as there are already many good articles regarding it, for example, &lt;a href=&#34;https://abdurrahman.org/2014/12/24/the-obligation-of-invoking-peace-and-blessings-on-the-prophet-in-a-complete-form-and-avoid-using-abbreviations-like-pbuh-saw-etc/&#34;&gt;The obligation of invoking peace and blessings on the Prophet in a complete form and avoid using abbreviations like (PBUH), (SAW) etc&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
+
+&lt;p&gt;Sending salutations upon the Prophet (Peace be upon him) is an important act of worship which is, unfortunately, done half-heartedly when it comes to writing in this age. The article takes the following into consideration,&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Salutations upon the Prophet (Peace be upon him) must be done in full at all times, whether in Arabic or English. &amp;lsquo;(Pbuh)&amp;rsquo;, &amp;lsquo;(ṣ)&amp;rdquo; or &amp;lsquo;(saw)&amp;rdquo; and all its variants are unacceptable.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Convenience. Salutations upon the Prophet should be made convenient for the user. Despite the advent of computers and word processors, you will still find people who find it difficult to send salutions upon the Prophet (Peace be upon him) in full.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Consistency. Methods introduced for sending salutations should help avoid typos and enable its semantics to be dealth with separately (you&amp;rsquo;ll understand this better in one of the following sections).&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h1 id=&#34;english-or-arabic&#34;&gt;English or Arabic?&lt;/h1&gt;
+
+&lt;p&gt;For those who have only ever used word processor software to put thoughts to paper/file/screen will think that this is probably a personal preference. Others, however, are aware of the limitations of certain files/methods and may be at times forced to type in English (or any other Latin based character set) even if their preference is Arabic. This and related issues will be discussed in this section.&lt;/p&gt;
+
+&lt;p&gt;Fonts consists of many characters from different alphabets of different languages. To get an idea of what this means, if on a Windows machine, open the application called &amp;lsquo;Character Map&amp;rsquo;. Browse through some of the common fonts and you&amp;rsquo;ll realize the amount of effort required to create a single font.&lt;/p&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;../images/salawat-on-prophet/character-map.png&#34; alt=&#34;Character Map&#34; /&gt;
+    
+    
+    &lt;figcaption&gt;
+        &lt;p&gt;
+        Character Map
+        
+            
+        
+        &lt;/p&gt; 
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+
+
+&lt;p&gt;Fonts consist of letters, special characters, joined characters, space, &lt;a href=&#34;https://en.wikipedia.org/wiki/Typographic_ligature&#34;&gt;ligatures&lt;/a&gt;, and even &lt;a href=&#34;https://en.wikipedia.org/wiki/Fleuron_(typography)&#34;&gt;fleurons&lt;/a&gt; at times. Each character in a font is represented by an address with which programs can realize the difference between say, Greek &lt;code&gt;v&lt;/code&gt; and the English &lt;code&gt;v&lt;/code&gt;. Fonts which include support for different languages are usually represented using the &lt;a href=&#34;https://en.wikipedia.org/wiki/UTF-8&#34;&gt;UTF-8&lt;/a&gt; system, a sort of subset of &lt;a href=&#34;https://en.wikipedia.org/wiki/Unicode&#34;&gt;Unicode&lt;/a&gt;. Addresses in this system are represented as &lt;code&gt;U+XXXX&lt;/code&gt; where &lt;code&gt;XXXX&lt;/code&gt; is a set of hexadecimal digits.&lt;/p&gt;
+
+&lt;p&gt;The Arabic language has always been attached to Islam and many conventions have now become a trademark of the language which even disbelievers learn, such as the Salam (greeting). You will be pleased to know that some have even moved into fonts as individual characters. Some of these are presented as follows, courtesy of &lt;a href=&#34;https://en.wikipedia.org/wiki/Arabic_script_in_Unicode&#34;&gt;Wikipedia&lt;/a&gt;.&lt;/p&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;../images/salawat-on-prophet/arabic-symbols-web.png&#34; alt=&#34;Some Arabic symbols and their Unicode addresses&#34; /&gt;
+    
+    
+    &lt;figcaption&gt;
+        &lt;p&gt;
+        Some Arabic symbols and their Unicode addresses
+        
+            
+        
+        &lt;/p&gt; 
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+
+
+&lt;p&gt;The character of concern here is the &amp;ldquo;Peace be upon him&amp;rdquo; symbol that occurs at the address &lt;code&gt;U+FDFA&lt;/code&gt;. To see this in action, if on a Windows machine with at least Microsoft Office 2013, open a new blank document. Then type in the address of the required symbol, &lt;code&gt;U+FDFA&lt;/code&gt; in this case. When you&amp;rsquo;re done, before you move the cursor anywhere else or type space, press &lt;code&gt;ALT + X&lt;/code&gt; and your code should automatically switch to the respective symbol. This is demonstrated as follows,&lt;/p&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;../images/salawat-on-prophet/word-salawat-logo.gif&#34; alt=&#34;Typing Salawāt symbol in Microsoft Word 2013&#34; /&gt;
+    
+    
+    &lt;figcaption&gt;
+        &lt;p&gt;
+        Typing Salawāt symbol in Microsoft Word 2013
+        
+            
+        
+        &lt;/p&gt; 
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+
+
+&lt;p&gt;Please note that all fonts do not have support for this symbol. However, most of the popular fonts do, so it should not pose a problem.&lt;/p&gt;
+
+&lt;h1 id=&#34;automation&#34;&gt;Automation&lt;/h1&gt;
+
+&lt;p&gt;Now that we know how to enter the salutations symbol in at least Microsoft Word 2013, let&amp;rsquo;s see how we can automate the process since the procedure is cumbersome if you have many instances to type.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Getting to know Microsoft Word Styles</title>
@@ -48,12 +144,16 @@ shown at a time and not all styles are shown.&lt;/p&gt;
 
 &lt;figure &gt;
     
-        &lt;img src=&#34;../images/ms-word-styles/ribbon-styles-highlight.png&#34; /&gt;
+        &lt;img src=&#34;../images/ms-word-styles/ribbon-styles-highlight.png&#34; alt=&#34;Styles section in Home tab of Microsoft Word&#34; /&gt;
     
     
     &lt;figcaption&gt;
-        &lt;h4&gt;Styles section in Home tab of Microsoft Word&lt;/h4&gt;
+        &lt;p&gt;
+        Styles section in Home tab of Microsoft Word
         
+            
+        
+        &lt;/p&gt; 
     &lt;/figcaption&gt;
     
 &lt;/figure&gt;
@@ -68,12 +168,16 @@ available for the current document.&lt;/p&gt;
 
 &lt;figure &gt;
     
-        &lt;img src=&#34;../images/ms-word-styles/styles-arrow.png&#34; /&gt;
+        &lt;img src=&#34;../images/ms-word-styles/styles-arrow.png&#34; alt=&#34;Styles Pane arrow&#34; /&gt;
     
     
     &lt;figcaption&gt;
-        &lt;h4&gt;Styles Pane arrow&lt;/h4&gt;
+        &lt;p&gt;
+        Styles Pane arrow
         
+            
+        
+        &lt;/p&gt; 
     &lt;/figcaption&gt;
     
 &lt;/figure&gt;
@@ -85,12 +189,16 @@ will list all styles used in the current document.&lt;/p&gt;
 
 &lt;figure &gt;
     
-        &lt;img src=&#34;../images/ms-word-styles/styles-pane.png&#34; /&gt;
+        &lt;img src=&#34;../images/ms-word-styles/styles-pane.png&#34; alt=&#34;Styles Pane&#34; /&gt;
     
     
     &lt;figcaption&gt;
-        &lt;h4&gt;Styles Pane&lt;/h4&gt;
+        &lt;p&gt;
+        Styles Pane
         
+            
+        
+        &lt;/p&gt; 
     &lt;/figcaption&gt;
     
 &lt;/figure&gt;
@@ -102,12 +210,16 @@ listed style and clicking &amp;ldquo;Modify&amp;hellip;&amp;rdquo;.&lt;/p&gt;
 
 &lt;figure &gt;
     
-        &lt;img src=&#34;../images/ms-word-styles/modify-style-dialog.png&#34; /&gt;
+        &lt;img src=&#34;../images/ms-word-styles/modify-style-dialog.png&#34; alt=&#34;Modify Style dialog&#34; /&gt;
     
     
     &lt;figcaption&gt;
-        &lt;h4&gt;Modify Style dialog&lt;/h4&gt;
+        &lt;p&gt;
+        Modify Style dialog
         
+            
+        
+        &lt;/p&gt; 
     &lt;/figcaption&gt;
     
 &lt;/figure&gt;
@@ -121,12 +233,16 @@ along with a few headings.&lt;/p&gt;
 
 &lt;figure &gt;
     
-        &lt;img src=&#34;../images/ms-word-styles/simple-example.png&#34; /&gt;
+        &lt;img src=&#34;../images/ms-word-styles/simple-example.png&#34; alt=&#34;Simple document&#34; /&gt;
     
     
     &lt;figcaption&gt;
-        &lt;h4&gt;Simple document&lt;/h4&gt;
+        &lt;p&gt;
+        Simple document
         
+            
+        
+        &lt;/p&gt; 
     &lt;/figcaption&gt;
     
 &lt;/figure&gt;
@@ -139,12 +255,16 @@ should have something as follows.&lt;/p&gt;
 
 &lt;figure &gt;
     
-        &lt;img src=&#34;../images/ms-word-styles/simple-example-headings.png&#34; /&gt;
+        &lt;img src=&#34;../images/ms-word-styles/simple-example-headings.png&#34; alt=&#34;Simple document with &amp;#34;heading 1&amp;#34; styles&#34; /&gt;
     
     
     &lt;figcaption&gt;
-        &lt;h4&gt;Simple document with &amp;#34;heading 1&amp;#34; styles&lt;/h4&gt;
+        &lt;p&gt;
+        Simple document with &amp;#34;heading 1&amp;#34; styles
         
+            
+        
+        &lt;/p&gt; 
     &lt;/figcaption&gt;
     
 &lt;/figure&gt;
@@ -164,12 +284,16 @@ option. It is highlighted in the screenshot below.&lt;/p&gt;
 
 &lt;figure &gt;
     
-        &lt;img src=&#34;../images/ms-word-styles/table-of-contents.png&#34; /&gt;
+        &lt;img src=&#34;../images/ms-word-styles/table-of-contents.png&#34; alt=&#34;Table of Contents option&#34; /&gt;
     
     
     &lt;figcaption&gt;
-        &lt;h4&gt;Table of Contents option&lt;/h4&gt;
+        &lt;p&gt;
+        Table of Contents option
         
+            
+        
+        &lt;/p&gt; 
     &lt;/figcaption&gt;
     
 &lt;/figure&gt;
@@ -180,12 +304,16 @@ option. It is highlighted in the screenshot below.&lt;/p&gt;
 
 &lt;figure &gt;
     
-        &lt;img src=&#34;../images/ms-word-styles/table-of-contents-preview.png&#34; /&gt;
+        &lt;img src=&#34;../images/ms-word-styles/table-of-contents-preview.png&#34; alt=&#34;Table of Contents Preview&#34; /&gt;
     
     
     &lt;figcaption&gt;
-        &lt;h4&gt;Table of Contents Preview&lt;/h4&gt;
+        &lt;p&gt;
+        Table of Contents Preview
         
+            
+        
+        &lt;/p&gt; 
     &lt;/figcaption&gt;
     
 &lt;/figure&gt;
@@ -203,12 +331,16 @@ seen in the following screenshot.&lt;/p&gt;
 
 &lt;figure &gt;
     
-        &lt;img src=&#34;../images/ms-word-styles/table-of-contents-update.png&#34; /&gt;
+        &lt;img src=&#34;../images/ms-word-styles/table-of-contents-update.png&#34; alt=&#34;Updating Table of Contents&#34; /&gt;
     
     
     &lt;figcaption&gt;
-        &lt;h4&gt;Updating Table of Contents&lt;/h4&gt;
+        &lt;p&gt;
+        Updating Table of Contents
         
+            
+        
+        &lt;/p&gt; 
     &lt;/figcaption&gt;
     
 &lt;/figure&gt;
@@ -230,12 +362,16 @@ document is shown below with a different theme than the default.&lt;/p&gt;
 
 &lt;figure &gt;
     
-        &lt;img src=&#34;../images/ms-word-styles/simple-example-theme.png&#34; /&gt;
+        &lt;img src=&#34;../images/ms-word-styles/simple-example-theme.png&#34; alt=&#34;Simple Example with different theme&#34; /&gt;
     
     
     &lt;figcaption&gt;
-        &lt;h4&gt;Simple Example with different theme&lt;/h4&gt;
+        &lt;p&gt;
+        Simple Example with different theme
         
+            
+        
+        &lt;/p&gt; 
     &lt;/figcaption&gt;
     
 &lt;/figure&gt;
@@ -263,12 +399,16 @@ suggestions or comments, please send them directly to my GitHub account.&lt;/p&g
 
 &lt;figure &gt;
     
-        &lt;img src=&#34;../images/output.svg&#34; /&gt;
+        &lt;img src=&#34;../images/output.svg&#34; alt=&#34;Steve Francia&#34; /&gt;
     
     
     &lt;figcaption&gt;
-        &lt;h4&gt;Steve Francia&lt;/h4&gt;
+        &lt;p&gt;
+        Steve Francia
         
+            
+        
+        &lt;/p&gt; 
     &lt;/figcaption&gt;
     
 &lt;/figure&gt;
@@ -279,6 +419,10 @@ suggestions or comments, please send them directly to my GitHub account.&lt;/p&g
   return 0;
 }
 &lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Testing&lt;/p&gt;
+
+&lt;img src=&#34;../../images/1.jpg&#34; alt=&#34;&#34; class=&#34;pannable-image&#34;&gt;
 </description>
     </item>
     

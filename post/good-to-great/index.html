@@ -2,8 +2,9 @@
 <html lang="en-us">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Welcome | Mohammad Khalid Hussain</title>
+<title>Welcome | Khalid Hussain</title>
 <link rel="stylesheet" href="../../css/style.css">
+<link rel="stylesheet" href="../../css/imageviewer.css">
 
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
 
@@ -14,7 +15,7 @@
   <div class="container">
     <nav class="nav">
       <div class="nav-left">
-        <a class="nav-item" href="http://khalid-hussain.github.io"><h1 class="title is-4">Mohammad Khalid Hussain</h1></a>
+        <a class="nav-item" href="http://khalid-hussain.github.io"><h1 class="title is-4">Khalid Hussain</h1></a>
       </div>
       <div class="nav-right">
         <nav class="nav-item level is-mobile">
@@ -44,12 +45,16 @@
 
 <figure >
     
-        <img src="../../images/output.svg" />
+        <img src="../../images/output.svg" alt="Steve Francia" />
     
     
     <figcaption>
-        <h4>Steve Francia</h4>
+        <p>
+        Steve Francia
         
+            
+        
+        </p> 
     </figcaption>
     
 </figure>
@@ -61,6 +66,10 @@
 }
 </code></pre>
 
+<p>Testing</p>
+
+<img src="../../images/1.jpg" alt="" class="pannable-image">
+
     </div>
   </div>
 </section>
@@ -71,6 +80,14 @@
     <p></p>
   </div>
 </section>
+<script type="text/javascript" src="../../js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="../../js/imageviewer.min.js"></script>
+<script type="text/javascript">
+    
+    $(function () {
+        $('.pannable-image').ImageViewer();
+    });
+</script>
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/highlight.min.js"></script>
 
 <script>hljs.initHighlightingOnLoad();</script>
