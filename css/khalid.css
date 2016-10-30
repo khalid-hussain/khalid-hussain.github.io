@@ -1,5 +1,6 @@
 .content > figure{
   text-align: center;
+  padding-bottom: 2em;
 }
 
 .content > figure > figcaption > h4::before {
