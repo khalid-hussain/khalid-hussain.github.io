@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Introduction to Pandoc | Khalid Hussain</title>
+<link rel="stylesheet" href="http://khalid-hussain.github.io/css/style.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/default.min.css">
+
+
+<section class="section">
+  <div class="container">
+    <nav class="nav">
+      <div class="nav-left">
+        <a class="nav-item" href="http://khalid-hussain.github.io"><h1 class="title is-4">Khalid Hussain</h1></a>
+      </div>
+      <div class="nav-right">
+        <nav class="nav-item level is-mobile">
+          
+          <a class="level-item" href="https://github.com/khalid-hussain">
+            <span class="icon">
+              <i class="fa fa-github"></i>
+            </span>
+          </a>
+          
+        </nav>
+      </div>
+    </nav>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2 class="subtitle is-6">November 4, 2016</h2>
+    <h1 class="title">Introduction to Pandoc</h1>
+    <div class="content">
+      
+
+<p>This article is dedicated to <a href="https://www.facebook.com/moaaz.mahdi">Moaaz Mahdi</a>.</p>
+
+<h1 id="introduction">Introduction</h1>
+
+<p>This article will introduce you to a brilliant program called
+<a href="http://www.pandoc.org">Pandoc</a> by <a href="http://johnmacfarlane.net/">John
+MacFarlane</a>. Pandoc is a document converter which
+allows for conversion between different document formats. The list of
+supported document formats is overwhelming but ones which might be of
+universal interest are: <a href="https://en.wikipedia.org/wiki/Office_Open_XML">Microsoft
+Docx</a>, HTML, <a href="http://www
+.latex-project.org/about/">LaTeX</a>,
+<a href="https://daringfireball.net/projects/markdown/syntax">Markdown</a>, and Epub.</p>
+
+<p>Pandoc may not seem that useful in the beginning but as we go through this
+article, you will come to love the different scenarios it can be applied to.</p>
+
+<p>Pandoc gets its name from a combination of the words ‘pan-’ and ‘document’.
+‘Pan-’, in its combining form, means, “involving all of a (specified) group or
+region, e.g., Pan-American”<sup class="footnote-ref" id="fnref:pan"><a rel="footnote" href="#fn:pan">1</a></sup>, thus Pan-Document, and finally Pandoc.</p>
+
+<h1 id="installation">Installation</h1>
+
+<p>First, download the installer for your system. Pandoc is available for <a href="https://github.com/jgm/pandoc/releases/download/1.18/pandoc-1.18-windows.msi">Windows</a>, <a href="https://github.com/jgm/pandoc/releases/download/1.18/pandoc-1.18-1-amd64.deb">Linux</a>, and <a href="https://github.com/jgm/pandoc/releases/download/1.18/pandoc-1.18-osx.pkg">macOS</a>. The latest version as of this writing is v1.18. Pandoc releases can be viewed on its GitHub <a href="https://github.com/jgm/pandoc/releases">Releases page</a>.</p>
+
+<p>Installation methods may vary slightly depending on the system but it should be straightforward nonetheless. Do note that Pandoc is a command-line application and thus you will not find any shortcuts in the regular places (for Windows, this would be the Start menu and Desktop). You can check if your installation was successful by opening your command prompt and entering,</p>
+
+<pre><code>pandoc --version
+</code></pre>
+
+<p>which would produce the following (if using v1.18; v1.17 and earlier will show different information)</p>
+
+<pre><code>pandoc 1.18
+Compiled with pandoc-types 1.17.0.4, texmath 0.8.6.6, highlighting-kate 0.6.3
+Default user data directory: C:\Users\Khalid\AppData\Roaming\pandoc
+Copyright (C) 2006-2016 John MacFarlane
+Web:  http://pandoc.org
+This is free software; see the source for copying conditions.
+There is no warranty, not even for merchantability or fitness
+for a particular purpose.
+
+</code></pre>
+
+<p><em>To be continued</em>&hellip;</p>
+<div class="footnotes">
+
+<hr />
+
+<ol>
+<li id="fn:pan">&ldquo;Pan.&rdquo; Merriam-Webster.com. Accessed November 6, 2016. <a href="http://www.merriam-webster.com/dictionary/pan">http://www.merriam-webster.com/dictionary/pan</a>.
+ <a class="footnote-return" href="#fnref:pan"><sup>[return]</sup></a></li>
+</ol>
+</div>
+
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <aside><div id="disqus_thread"></div></aside>
+    <script type="text/javascript">
+      var disqus_shortname = 'khalid-hussain-github-io';
+      (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container has-text-centered">
+    <p>&copy; <a href="https://github.com/khalid-hussain">Khalid Hussain</a> 1438</p>
+  </div>
+</section>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/highlight.min.js"></script>
+
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-58223270-2', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='//www.google-analytics.com/analytics.js'></script>
+
+
+

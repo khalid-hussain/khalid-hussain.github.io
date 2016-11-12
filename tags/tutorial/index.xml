@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Khalid Hussain</title>
+    <link>http://khalid-hussain.github.io/tags/tutorial/index.xml</link>
+    <description>Recent content on Khalid Hussain</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; &lt;a href=&#34;https://github.com/khalid-hussain&#34;&gt;Khalid Hussain&lt;/a&gt; 1438</copyright>
+    <atom:link href="http://khalid-hussain.github.io/tags/tutorial/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Introduction to Pandoc</title>
+      <link>http://khalid-hussain.github.io/post/introduction-to-pandoc/</link>
+      <pubDate>Fri, 04 Nov 2016 22:49:21 +0800</pubDate>
+      
+      <guid>http://khalid-hussain.github.io/post/introduction-to-pandoc/</guid>
+      <description>
+
+&lt;p&gt;This article is dedicated to &lt;a href=&#34;https://www.facebook.com/moaaz.mahdi&#34;&gt;Moaaz Mahdi&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
+
+&lt;p&gt;This article will introduce you to a brilliant program called
+&lt;a href=&#34;http://www.pandoc.org&#34;&gt;Pandoc&lt;/a&gt; by &lt;a href=&#34;http://johnmacfarlane.net/&#34;&gt;John
+MacFarlane&lt;/a&gt;. Pandoc is a document converter which
+allows for conversion between different document formats. The list of
+supported document formats is overwhelming but ones which might be of
+universal interest are: &lt;a href=&#34;https://en.wikipedia.org/wiki/Office_Open_XML&#34;&gt;Microsoft
+Docx&lt;/a&gt;, HTML, &lt;a href=&#34;http://www
+.latex-project.org/about/&#34;&gt;LaTeX&lt;/a&gt;,
+&lt;a href=&#34;https://daringfireball.net/projects/markdown/syntax&#34;&gt;Markdown&lt;/a&gt;, and Epub.&lt;/p&gt;
+
+&lt;p&gt;Pandoc may not seem that useful in the beginning but as we go through this
+article, you will come to love the different scenarios it can be applied to.&lt;/p&gt;
+
+&lt;p&gt;Pandoc gets its name from a combination of the words ‘pan-’ and ‘document’.
+‘Pan-’, in its combining form, means, “involving all of a (specified) group or
+region, e.g., Pan-American”&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:pan&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:pan&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;, thus Pan-Document, and finally Pandoc.&lt;/p&gt;
+
+&lt;h1 id=&#34;installation&#34;&gt;Installation&lt;/h1&gt;
+
+&lt;p&gt;First, download the installer for your system. Pandoc is available for &lt;a href=&#34;https://github.com/jgm/pandoc/releases/download/1.18/pandoc-1.18-windows.msi&#34;&gt;Windows&lt;/a&gt;, &lt;a href=&#34;https://github.com/jgm/pandoc/releases/download/1.18/pandoc-1.18-1-amd64.deb&#34;&gt;Linux&lt;/a&gt;, and &lt;a href=&#34;https://github.com/jgm/pandoc/releases/download/1.18/pandoc-1.18-osx.pkg&#34;&gt;macOS&lt;/a&gt;. The latest version as of this writing is v1.18. Pandoc releases can be viewed on its GitHub &lt;a href=&#34;https://github.com/jgm/pandoc/releases&#34;&gt;Releases page&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Installation methods may vary slightly depending on the system but it should be straightforward nonetheless. Do note that Pandoc is a command-line application and thus you will not find any shortcuts in the regular places (for Windows, this would be the Start menu and Desktop). You can check if your installation was successful by opening your command prompt and entering,&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;pandoc --version
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;which would produce the following (if using v1.18; v1.17 and earlier will show different information)&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;pandoc 1.18
+Compiled with pandoc-types 1.17.0.4, texmath 0.8.6.6, highlighting-kate 0.6.3
+Default user data directory: C:\Users\Khalid\AppData\Roaming\pandoc
+Copyright (C) 2006-2016 John MacFarlane
+Web:  http://pandoc.org
+This is free software; see the source for copying conditions.
+There is no warranty, not even for merchantability or fitness
+for a particular purpose.
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;em&gt;To be continued&lt;/em&gt;&amp;hellip;&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+
+&lt;hr /&gt;
+
+&lt;ol&gt;
+&lt;li id=&#34;fn:pan&#34;&gt;&amp;ldquo;Pan.&amp;rdquo; Merriam-Webster.com. Accessed November 6, 2016. &lt;a href=&#34;http://www.merriam-webster.com/dictionary/pan&#34;&gt;http://www.merriam-webster.com/dictionary/pan&lt;/a&gt;.
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:pan&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
