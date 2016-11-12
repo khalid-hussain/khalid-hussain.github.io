@@ -22,15 +22,11 @@
 
 &lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
 
-&lt;p&gt;This article will introduce you to a brilliant program called
-&lt;a href=&#34;http://www.pandoc.org&#34;&gt;Pandoc&lt;/a&gt; by &lt;a href=&#34;http://johnmacfarlane.net/&#34;&gt;John
-MacFarlane&lt;/a&gt;. Pandoc is a document converter which
-allows for conversion between different document formats. The list of
-supported document formats is overwhelming but ones which might be of
-universal interest are: &lt;a href=&#34;https://en.wikipedia.org/wiki/Office_Open_XML&#34;&gt;Microsoft
-Docx&lt;/a&gt;, HTML, &lt;a href=&#34;http://www
-.latex-project.org/about/&#34;&gt;LaTeX&lt;/a&gt;,
-&lt;a href=&#34;https://daringfireball.net/projects/markdown/syntax&#34;&gt;Markdown&lt;/a&gt;, and Epub.&lt;/p&gt;
+&lt;p&gt;This article will introduce you to a brilliant program called &lt;a href=&#34;http://www.pandoc.org&#34;&gt;Pandoc&lt;/a&gt; by
+&lt;a href=&#34;http://johnmacfarlane.net/&#34;&gt;John MacFarlane&lt;/a&gt;. Pandoc is a document converter which allows for conversion
+between different document formats. The list of supported document formats is
+overwhelming but ones which might be of universal interest are: &lt;a href=&#34;https://en.wikipedia.org/wiki/Office_Open_XML&#34;&gt;Microsoft
+Docx&lt;/a&gt;, HTML, &lt;a href=&#34;http://www.latex-project.org/about/&#34;&gt;LaTeX&lt;/a&gt;, &lt;a href=&#34;https://daringfireball.net/projects/markdown/syntax&#34;&gt;Markdown&lt;/a&gt;, and Epub.&lt;/p&gt;
 
 &lt;p&gt;Pandoc may not seem that useful in the beginning but as we go through this
 article, you will come to love the different scenarios it can be applied to.&lt;/p&gt;
@@ -41,14 +37,21 @@ region, e.g., Pan-American”&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:
 
 &lt;h1 id=&#34;installation&#34;&gt;Installation&lt;/h1&gt;
 
-&lt;p&gt;First, download the installer for your system. Pandoc is available for &lt;a href=&#34;https://github.com/jgm/pandoc/releases/download/1.18/pandoc-1.18-windows.msi&#34;&gt;Windows&lt;/a&gt;, &lt;a href=&#34;https://github.com/jgm/pandoc/releases/download/1.18/pandoc-1.18-1-amd64.deb&#34;&gt;Linux&lt;/a&gt;, and &lt;a href=&#34;https://github.com/jgm/pandoc/releases/download/1.18/pandoc-1.18-osx.pkg&#34;&gt;macOS&lt;/a&gt;. The latest version as of this writing is v1.18. Pandoc releases can be viewed on its GitHub &lt;a href=&#34;https://github.com/jgm/pandoc/releases&#34;&gt;Releases page&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;First, download the installer for your system. Pandoc is available for
+&lt;a href=&#34;https://github.com/jgm/pandoc/releases/download/1.18/pandoc-1.18-windows.msi&#34;&gt;Windows&lt;/a&gt;, &lt;a href=&#34;https://github.com/jgm/pandoc/releases/download/1.18/pandoc-1.18-1-amd64.deb&#34;&gt;Linux&lt;/a&gt;, and &lt;a href=&#34;https://github.com/jgm/pandoc/releases/download/1.18/pandoc-1.18-osx.pkg&#34;&gt;macOS&lt;/a&gt;. The latest version as of this writing is
+v1.18. Pandoc releases can be viewed on its GitHub &lt;a href=&#34;https://github.com/jgm/pandoc/releases&#34;&gt;Releases page&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;Installation methods may vary slightly depending on the system but it should be straightforward nonetheless. Do note that Pandoc is a command-line application and thus you will not find any shortcuts in the regular places (for Windows, this would be the Start menu and Desktop). You can check if your installation was successful by opening your command prompt and entering,&lt;/p&gt;
+&lt;p&gt;Installation methods may vary slightly depending on the system but it should
+be straightforward nonetheless. Do note that Pandoc is a command-line
+application and thus you will not find any shortcuts in the regular places
+(for Windows, this would be the Start menu and Desktop). You can check if your
+installation was successful by opening your command prompt and entering,&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;pandoc --version
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;which would produce the following (if using v1.18; v1.17 and earlier will show different information)&lt;/p&gt;
+&lt;p&gt;which would produce the following (if using v1.18; v1.17 and earlier will show
+different information)&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;pandoc 1.18
 Compiled with pandoc-types 1.17.0.4, texmath 0.8.6.6, highlighting-kate 0.6.3
@@ -60,6 +63,171 @@ There is no warranty, not even for merchantability or fitness
 for a particular purpose.
 
 &lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;If you get the same output as above, then congratulations, you&amp;rsquo;ve got Pandoc
+installed.&lt;/p&gt;
+
+&lt;h1 id=&#34;markdown&#34;&gt;Markdown&lt;/h1&gt;
+
+&lt;p&gt;In order to use Pandoc efficiently, it is wise to learn one of its many text-
+file based document markups. I suggest learning &lt;a href=&#34;https://daringfireball.net/projects/markdown/syntax&#34;&gt;Markdown&lt;/a&gt; as it&amp;rsquo;s the most
+used as per my experience. Learning a markup syntax for storing documents is a
+different approach compared to one most people will be used to (i.e. using
+word processors such as Microsoft Word). It offers a &lt;strong&gt;WYSIWYM&lt;/strong&gt; (What You See
+Is What You &lt;strong&gt;Mean&lt;/strong&gt;) approach as opposed to &lt;strong&gt;WYSIWYG&lt;/strong&gt; (What You See Is What
+You &lt;strong&gt;Get&lt;/strong&gt;). Such an approach, has a few advantages,&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Forces you to focus on your content instead of both content and
+presentation. Proper arrangement of your content has added benefits in the
+resultant format. For example, table of contents in &lt;code&gt;docx&lt;/code&gt; documents can be
+automatically generated.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Text files have been around for a &lt;em&gt;long&lt;/em&gt; time. Documents created in this
+format even 20 years ago can still be read today.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;A range of text editors are available for all major operating systems. Thus
+documents are not tied to a certain format which would require special
+software which may or may not decide to retain backwards compatibility with
+older versions of their format as time passes (for example, files created in
+Microsoft Word 2003 may have some trouble opening in the shiny Microsoft Word
+2016).&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;They can be used for more than just documents. A markdown text file can be
+used for presentations and blog posts as well (there may be others, but these
+two are what I&amp;rsquo;ve used so far).&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&#34;what-is-markdown-really&#34;&gt;What is Markdown, &lt;em&gt;really&lt;/em&gt;?&lt;/h2&gt;
+
+&lt;p&gt;Markdown is just &lt;em&gt;syntax&lt;/em&gt; for representing content. You &lt;em&gt;can&lt;/em&gt;, believe it or
+not, create Markdown text documents on your computer at this very moment. All
+you need to do is create a text document and type away. The syntax helps
+identify elements of your text file. For example, if you split a document into
+parts, let&amp;rsquo;s say a thesis, each part is represented as a section/chapter,
+subsection, and subsubsection; these will be represented by the headings
+syntax as follows,&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;# Introduction
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium
+voluptates laboriosam, eaque voluptatem vitae earum quos similique veniam
+inventore ducimus recusandae facilis nulla mollitia optio hic, magnam, quidem
+ex officiis?
+
+# Background of Study
+
+## Current state of Pakistan
+
+## Complications of Supreme Court
+
+# Problem Statement
+
+...
+
+# References
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Similarly, for bold and italics, surround the word/phrase with two asterisks
+or an underscore respectively (quite similar to WhatsApp). This is
+demonstrated as follows,&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;This is a sentence with **bold** and _italic_ text.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I&amp;rsquo;m not going to explain all the other syntax. Please refer to the following
+web pages for reference:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;https://daringfireball.net/projects/markdown/basics&#34;&gt;Daring Fireball: Markdown Basics&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://daringfireball.net/projects/markdown/syntax&#34;&gt;Daring Fireball: Markdown Syntax&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&#34;markdown-flavors&#34;&gt;Markdown Flavors&lt;/h2&gt;
+
+&lt;p&gt;Hopefully at this stage, you should have a basic understanding of Markdown
+along with some of its syntax. Now, we&amp;rsquo;ll move on to flavors. Markdown in the
+beginning was limited some basic syntax and once it caught on, people wanted
+syntax for other things which were not thought of in the beginning. Examples
+of this include, tables and definition lists, and footnotes to name a few.
+Different groups of people expanded on Markdown in different ways and thus we
+have Markdown &amp;ldquo;flavors&amp;rdquo;. Some of the more popular flavors that I&amp;rsquo;ve come
+across are &amp;ldquo;MultiMarkdown&amp;rdquo;, &amp;ldquo;PHP Markdown&amp;rdquo;, and &amp;ldquo;GitHub Markdown&amp;rdquo;.&lt;/p&gt;
+
+&lt;p&gt;This seems like a problem that has to be fixed, i.e., having many different
+flavors of Markdown, and it is. There has been a movement to unify different
+flavors into a global flavor but it hasn&amp;rsquo;t gained widespread acceptance as of yet. It is called &lt;a href=&#34;http://commonmark.org/&#34;&gt;CommonMark&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;You&amp;rsquo;ll have to keep this in mind when dealing with rare syntax that is only
+supported in a subset of all the flavors available, for example, &lt;a href=&#34;http://fletcher.github.io/MultiMarkdown-5/tables.html&#34;&gt;multi-column cell
+tables&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h1 id=&#34;first-steps-with-pandoc&#34;&gt;First steps with Pandoc&lt;/h1&gt;
+
+&lt;p&gt;To show you what Pandoc is capable of, let&amp;rsquo;s create a sample Markdown
+document called &lt;code&gt;myDocument.md&lt;/code&gt; as follows:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;# Introduction
+
+**Lorem** ipsum dolor sit _amet_, &amp;quot;consectetur&amp;quot; adipisicing elit. Veritatis, quidem
+facere incidunt quae velit sit repellendus perferendis! Vel, deleniti nulla
+hic eaque, quibusdam obcaecati molestias, maxime similique sint quos harum.
+
+## Background Study
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam rem, vitae
+minus provident maiores quae laborum rerum, numquam! Doloribus atque veritatis
+earum deleniti accusantium, quidem possimus consequuntur a inventore minima!
+
+# Research Methodology
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab expedita impedit
+nulla fuga numquam corporis sit voluptates quo, deleniti, quam in praesentium!
+Pariatur eius, quibusdam quam et expedita quia dolores.
+
+The following is a list of items:
+
+1. The first item
+2. The second item
+3. The third item
+
+# References
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;When done, open a command prompt in the same directory you had saved the Markdown file, and run,&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;pandoc -t docx -o myDocument.docx --smart myDocument.md
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This will create a Microsoft Word document containing your content into the same directory. Let&amp;rsquo;s break down the command into understandable pieces,&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;pandoc&lt;/code&gt;, the name of the application, if it wasn&amp;rsquo;t obvious already.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-t docx&lt;/code&gt;, meaning, convert &lt;strong&gt;t&lt;/strong&gt;o docx.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-o myDocument.docx&lt;/code&gt;, the name of our &lt;strong&gt;o&lt;/strong&gt;utput file with the extension.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;--smart&lt;/code&gt;, convert straight quotes to &lt;a href=&#34;https://en.wikipedia.org/wiki/Quotation_marks_in_English&#34;&gt;fancy quotes&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;And finally, the name of our source document, &lt;code&gt;myDocument.md&lt;/code&gt; in this case.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Here is a preview of the document,&lt;/p&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;../images/introduction-to-pandoc/docx-output-nav.png&#34; alt=&#34;Docx output with the navigation pane&#34; /&gt;
+    
+    
+    &lt;figcaption&gt;
+        &lt;p&gt;
+        Docx output with the navigation pane
+        
+            
+        
+        &lt;/p&gt; 
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+
 
 &lt;p&gt;&lt;em&gt;To be continued&lt;/em&gt;.&lt;/p&gt;
 &lt;div class=&#34;footnotes&#34;&gt;

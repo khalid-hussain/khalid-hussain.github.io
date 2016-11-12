@@ -54,15 +54,11 @@
 
 <h1 id="introduction">Introduction</h1>
 
-<p>This article will introduce you to a brilliant program called
-<a href="http://www.pandoc.org">Pandoc</a> by <a href="http://johnmacfarlane.net/">John
-MacFarlane</a>. Pandoc is a document converter which
-allows for conversion between different document formats. The list of
-supported document formats is overwhelming but ones which might be of
-universal interest are: <a href="https://en.wikipedia.org/wiki/Office_Open_XML">Microsoft
-Docx</a>, HTML, <a href="http://www
-.latex-project.org/about/">LaTeX</a>,
-<a href="https://daringfireball.net/projects/markdown/syntax">Markdown</a>, and Epub.</p>
+<p>This article will introduce you to a brilliant program called <a href="http://www.pandoc.org">Pandoc</a> by
+<a href="http://johnmacfarlane.net/">John MacFarlane</a>. Pandoc is a document converter which allows for conversion
+between different document formats. The list of supported document formats is
+overwhelming but ones which might be of universal interest are: <a href="https://en.wikipedia.org/wiki/Office_Open_XML">Microsoft
+Docx</a>, HTML, <a href="http://www.latex-project.org/about/">LaTeX</a>, <a href="https://daringfireball.net/projects/markdown/syntax">Markdown</a>, and Epub.</p>
 
 <p>Pandoc may not seem that useful in the beginning but as we go through this
 article, you will come to love the different scenarios it can be applied to.</p>
@@ -73,14 +69,21 @@ region, e.g., Pan-American”<sup class="footnote-ref" id="fnref:pan"><a rel="fo
 
 <h1 id="installation">Installation</h1>
 
-<p>First, download the installer for your system. Pandoc is available for <a href="https://github.com/jgm/pandoc/releases/download/1.18/pandoc-1.18-windows.msi">Windows</a>, <a href="https://github.com/jgm/pandoc/releases/download/1.18/pandoc-1.18-1-amd64.deb">Linux</a>, and <a href="https://github.com/jgm/pandoc/releases/download/1.18/pandoc-1.18-osx.pkg">macOS</a>. The latest version as of this writing is v1.18. Pandoc releases can be viewed on its GitHub <a href="https://github.com/jgm/pandoc/releases">Releases page</a>.</p>
+<p>First, download the installer for your system. Pandoc is available for
+<a href="https://github.com/jgm/pandoc/releases/download/1.18/pandoc-1.18-windows.msi">Windows</a>, <a href="https://github.com/jgm/pandoc/releases/download/1.18/pandoc-1.18-1-amd64.deb">Linux</a>, and <a href="https://github.com/jgm/pandoc/releases/download/1.18/pandoc-1.18-osx.pkg">macOS</a>. The latest version as of this writing is
+v1.18. Pandoc releases can be viewed on its GitHub <a href="https://github.com/jgm/pandoc/releases">Releases page</a>.</p>
 
-<p>Installation methods may vary slightly depending on the system but it should be straightforward nonetheless. Do note that Pandoc is a command-line application and thus you will not find any shortcuts in the regular places (for Windows, this would be the Start menu and Desktop). You can check if your installation was successful by opening your command prompt and entering,</p>
+<p>Installation methods may vary slightly depending on the system but it should
+be straightforward nonetheless. Do note that Pandoc is a command-line
+application and thus you will not find any shortcuts in the regular places
+(for Windows, this would be the Start menu and Desktop). You can check if your
+installation was successful by opening your command prompt and entering,</p>
 
 <pre><code>pandoc --version
 </code></pre>
 
-<p>which would produce the following (if using v1.18; v1.17 and earlier will show different information)</p>
+<p>which would produce the following (if using v1.18; v1.17 and earlier will show
+different information)</p>
 
 <pre><code>pandoc 1.18
 Compiled with pandoc-types 1.17.0.4, texmath 0.8.6.6, highlighting-kate 0.6.3
@@ -92,6 +95,171 @@ There is no warranty, not even for merchantability or fitness
 for a particular purpose.
 
 </code></pre>
+
+<p>If you get the same output as above, then congratulations, you&rsquo;ve got Pandoc
+installed.</p>
+
+<h1 id="markdown">Markdown</h1>
+
+<p>In order to use Pandoc efficiently, it is wise to learn one of its many text-
+file based document markups. I suggest learning <a href="https://daringfireball.net/projects/markdown/syntax">Markdown</a> as it&rsquo;s the most
+used as per my experience. Learning a markup syntax for storing documents is a
+different approach compared to one most people will be used to (i.e. using
+word processors such as Microsoft Word). It offers a <strong>WYSIWYM</strong> (What You See
+Is What You <strong>Mean</strong>) approach as opposed to <strong>WYSIWYG</strong> (What You See Is What
+You <strong>Get</strong>). Such an approach, has a few advantages,</p>
+
+<ol>
+<li><p>Forces you to focus on your content instead of both content and
+presentation. Proper arrangement of your content has added benefits in the
+resultant format. For example, table of contents in <code>docx</code> documents can be
+automatically generated.</p></li>
+
+<li><p>Text files have been around for a <em>long</em> time. Documents created in this
+format even 20 years ago can still be read today.</p></li>
+
+<li><p>A range of text editors are available for all major operating systems. Thus
+documents are not tied to a certain format which would require special
+software which may or may not decide to retain backwards compatibility with
+older versions of their format as time passes (for example, files created in
+Microsoft Word 2003 may have some trouble opening in the shiny Microsoft Word
+2016).</p></li>
+
+<li><p>They can be used for more than just documents. A markdown text file can be
+used for presentations and blog posts as well (there may be others, but these
+two are what I&rsquo;ve used so far).</p></li>
+</ol>
+
+<h2 id="what-is-markdown-really">What is Markdown, <em>really</em>?</h2>
+
+<p>Markdown is just <em>syntax</em> for representing content. You <em>can</em>, believe it or
+not, create Markdown text documents on your computer at this very moment. All
+you need to do is create a text document and type away. The syntax helps
+identify elements of your text file. For example, if you split a document into
+parts, let&rsquo;s say a thesis, each part is represented as a section/chapter,
+subsection, and subsubsection; these will be represented by the headings
+syntax as follows,</p>
+
+<pre><code class="language-markdown"># Introduction
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium
+voluptates laboriosam, eaque voluptatem vitae earum quos similique veniam
+inventore ducimus recusandae facilis nulla mollitia optio hic, magnam, quidem
+ex officiis?
+
+# Background of Study
+
+## Current state of Pakistan
+
+## Complications of Supreme Court
+
+# Problem Statement
+
+...
+
+# References
+</code></pre>
+
+<p>Similarly, for bold and italics, surround the word/phrase with two asterisks
+or an underscore respectively (quite similar to WhatsApp). This is
+demonstrated as follows,</p>
+
+<pre><code class="language-markdown">This is a sentence with **bold** and _italic_ text.
+</code></pre>
+
+<p>I&rsquo;m not going to explain all the other syntax. Please refer to the following
+web pages for reference:</p>
+
+<ol>
+<li><a href="https://daringfireball.net/projects/markdown/basics">Daring Fireball: Markdown Basics</a></li>
+<li><a href="https://daringfireball.net/projects/markdown/syntax">Daring Fireball: Markdown Syntax</a></li>
+</ol>
+
+<h2 id="markdown-flavors">Markdown Flavors</h2>
+
+<p>Hopefully at this stage, you should have a basic understanding of Markdown
+along with some of its syntax. Now, we&rsquo;ll move on to flavors. Markdown in the
+beginning was limited some basic syntax and once it caught on, people wanted
+syntax for other things which were not thought of in the beginning. Examples
+of this include, tables and definition lists, and footnotes to name a few.
+Different groups of people expanded on Markdown in different ways and thus we
+have Markdown &ldquo;flavors&rdquo;. Some of the more popular flavors that I&rsquo;ve come
+across are &ldquo;MultiMarkdown&rdquo;, &ldquo;PHP Markdown&rdquo;, and &ldquo;GitHub Markdown&rdquo;.</p>
+
+<p>This seems like a problem that has to be fixed, i.e., having many different
+flavors of Markdown, and it is. There has been a movement to unify different
+flavors into a global flavor but it hasn&rsquo;t gained widespread acceptance as of yet. It is called <a href="http://commonmark.org/">CommonMark</a>.</p>
+
+<p>You&rsquo;ll have to keep this in mind when dealing with rare syntax that is only
+supported in a subset of all the flavors available, for example, <a href="http://fletcher.github.io/MultiMarkdown-5/tables.html">multi-column cell
+tables</a>.</p>
+
+<h1 id="first-steps-with-pandoc">First steps with Pandoc</h1>
+
+<p>To show you what Pandoc is capable of, let&rsquo;s create a sample Markdown
+document called <code>myDocument.md</code> as follows:</p>
+
+<pre><code class="language-markdown"># Introduction
+
+**Lorem** ipsum dolor sit _amet_, &quot;consectetur&quot; adipisicing elit. Veritatis, quidem
+facere incidunt quae velit sit repellendus perferendis! Vel, deleniti nulla
+hic eaque, quibusdam obcaecati molestias, maxime similique sint quos harum.
+
+## Background Study
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam rem, vitae
+minus provident maiores quae laborum rerum, numquam! Doloribus atque veritatis
+earum deleniti accusantium, quidem possimus consequuntur a inventore minima!
+
+# Research Methodology
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab expedita impedit
+nulla fuga numquam corporis sit voluptates quo, deleniti, quam in praesentium!
+Pariatur eius, quibusdam quam et expedita quia dolores.
+
+The following is a list of items:
+
+1. The first item
+2. The second item
+3. The third item
+
+# References
+</code></pre>
+
+<p>When done, open a command prompt in the same directory you had saved the Markdown file, and run,</p>
+
+<pre><code class="language-bash">pandoc -t docx -o myDocument.docx --smart myDocument.md
+</code></pre>
+
+<p>This will create a Microsoft Word document containing your content into the same directory. Let&rsquo;s break down the command into understandable pieces,</p>
+
+<ol>
+<li><code>pandoc</code>, the name of the application, if it wasn&rsquo;t obvious already.</li>
+<li><code>-t docx</code>, meaning, convert <strong>t</strong>o docx.</li>
+<li><code>-o myDocument.docx</code>, the name of our <strong>o</strong>utput file with the extension.</li>
+<li><code>--smart</code>, convert straight quotes to <a href="https://en.wikipedia.org/wiki/Quotation_marks_in_English">fancy quotes</a>.</li>
+<li>And finally, the name of our source document, <code>myDocument.md</code> in this case.</li>
+</ol>
+
+<p>Here is a preview of the document,</p>
+
+
+<figure >
+    
+        <img src="../../images/introduction-to-pandoc/docx-output-nav.png" alt="Docx output with the navigation pane" />
+    
+    
+    <figcaption>
+        <p>
+        Docx output with the navigation pane
+        
+            
+        
+        </p> 
+    </figcaption>
+    
+</figure>
+
 
 <p><em>To be continued</em>.</p>
 <div class="footnotes">
@@ -132,6 +300,9 @@ for a particular purpose.
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/highlight.min.js"></script>
 
 <script>hljs.initHighlightingOnLoad();</script>
+
+
+
 
 
 <script>
