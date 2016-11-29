@@ -5,6 +5,7 @@
 <title>Introduction to Pandoc | Khalid Hussain</title>
 <link rel="stylesheet" href="../../css/style.css">
 
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
 
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/default.min.css">
@@ -55,10 +56,10 @@
 <h1 id="introduction">Introduction</h1>
 
 <p>This article will introduce you to a brilliant program called <a href="http://www.pandoc.org">Pandoc</a> by
-<a href="http://johnmacfarlane.net/">John MacFarlane</a>. Pandoc is a document converter which allows for conversion
-between different document formats. The list of supported document formats is
-overwhelming but ones which might be of universal interest are: <a href="https://en.wikipedia.org/wiki/Office_Open_XML">Microsoft
-Docx</a>, HTML, <a href="http://www.latex-project.org/about/">LaTeX</a>, <a href="https://daringfireball.net/projects/markdown/syntax">Markdown</a>, and Epub.</p>
+<a href="http://johnmacfarlane.net/">John MacFarlane</a>. Pandoc is a utility that converts documents between
+different formats. The list of supported document formats is huge but
+ones which might be of universal interest are Microsoft <a href="https://en.wikipedia.org/wiki/Office_Open_XML">Docx</a>, HTML, <a href="http://www.latex-project.org/about/">LaTeX</a>,
+<a href="https://daringfireball.net/projects/markdown/syntax">Markdown</a>, and Epub.</p>
 
 <p>Pandoc may not seem that useful in the beginning but as we go through this
 article, you will come to love the different scenarios it can be applied to.</p>
@@ -261,7 +262,240 @@ The following is a list of items:
 </figure>
 
 
-<p><em>To be continued</em>.</p>
+<h1 id="citations-references">Citations/References</h1>
+
+<p>You&rsquo;ll be pleased to know that Pandoc supports citations/references in its
+syntax. To use it, you&rsquo;ll need a bibliography file which can be in a number of
+different formats. We&rsquo;ll be using <a href="http://www.bibtex.org/">BibTeX</a> for this tutorial. For a list of
+all possible formats, please see the <a href="http://pandoc.org/MANUAL.html#citations">Pandoc Citations</a>.</p>
+
+<p>First, we&rsquo;ll create our bibliography file. I&rsquo;ve selected three articles from
+<a href="http://scholar.google.com">Google Scholar</a> about Cloud Computing and created a file named
+<code>references.bib</code>, with the following contents.</p>
+
+<pre><code class="language-latex">@article{mell2011nist,
+  title={The NIST definition of cloud computing},
+  author={Mell, Peter and Grance, Tim},
+  year={2011},
+  publisher={Computer Security Division, Information Technology Laboratory, National Institute of Standards and Technology Gaithersburg}
+}
+
+@article{armbrust2010view,
+  title={A view of cloud computing},
+  author={Armbrust, Michael and Fox, Armando and Griffith, Rean and Joseph, Anthony D and Katz, Randy and Konwinski, Andy and Lee, Gunho and Patterson, David and Rabkin, Ariel and Stoica, Ion and others},
+  journal={Communications of the ACM},
+  volume={53},
+  number={4},
+  pages={50--58},
+  year={2010},
+  publisher={ACM}
+}
+
+@article{computing2011cloud,
+  title={Cloud computing privacy concerns on our doorstep},
+  author={ComPUtING, CLoUD},
+  journal={Communications of the ACM},
+  volume={54},
+  number={1},
+  pages={36--38},
+  year={2011}
+}
+</code></pre>
+
+<p>Second, we&rsquo;ll cite the references using their <em>key</em> in our source document as shown below. Pay attention to the difference when citing at the beginning and end of a sentence.</p>
+
+<pre><code class="language-markdown"># Introduction
+
+@mell2011nist says that, **Lorem** ipsum dolor sit _amet_, &quot;consectetur&quot;
+adipisicing elit. Veritatis, quidem facere incidunt quae velit sit repellendus
+perferendis! Vel, deleniti nulla hic eaque, quibusdam obcaecati molestias,
+maxime similique sint quos harum.
+
+## Background Study
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam rem, vitae
+minus provident maiores quae laborum rerum, numquam! Doloribus atque veritatis
+earum deleniti accusantium [@armbrust2010view], quidem possimus consequuntur a
+inventore minima!
+
+# Research Methodology
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab expedita impedit
+nulla fuga numquam corporis sit voluptates quo, deleniti, quam in praesentium!
+Pariatur eius, quibusdam quam et expedita quia dolores [@computing2011cloud, p.37].
+
+The following is a list of items:
+
+1. The first item
+2. The second item
+3. The third item
+
+# References
+</code></pre>
+
+<p>Third, we&rsquo;ll have to define a <a href="http://citationstyles.org">CSL (Citation Style Language)</a> file. A CSL file
+defines how to style the references at the end of a document. By default,
+Pandoc uses the Chicago Manual of Style author-date format. Using different
+styles will be explained in the following subsection.</p>
+
+<p>Finally, once everything is in place, for a <code>docx</code> file, type the following,</p>
+
+<pre><code class="language-bash">pandoc -t docx -o myDocument.docx --smart --bibliography references.bib --filter pandoc-citeproc myDocument.md
+</code></pre>
+
+<p>I&rsquo;ll explain some of the new commands we&rsquo;ve typed:</p>
+
+<ol>
+<li><code>--bibliography</code>, a command to define the bibliography. Whatever follows this command will be the name of the bibliography file, <code>references.bib</code> in this case.</li>
+<li><code>--filter</code>, a command to define filters that would go through your source file. In this case we&rsquo;re going to use <code>pandoc-citeproc</code> to process our citations.</li>
+</ol>
+
+<p>This command will result in the following document content, I&rsquo;ve only selected the parts that will show the effects of our citation processing.</p>
+
+
+<figure >
+    
+        <img src="../../images/introduction-to-pandoc/docx-references-preview.png" alt="Docx output with citations in main text" />
+    
+    
+    <figcaption>
+        <p>
+        Docx output with citations in main text
+        
+            
+        
+        </p> 
+    </figcaption>
+    
+</figure>
+
+
+
+<figure >
+    
+        <img src="../../images/introduction-to-pandoc/docx-references-end.png" alt="Docx end-of-document bibliography" />
+    
+    
+    <figcaption>
+        <p>
+        Docx end-of-document bibliography
+        
+            
+        
+        </p> 
+    </figcaption>
+    
+</figure>
+
+
+<h2 id="different-csl-styles">Different CSL styles</h2>
+
+<p>Now on to different citation styles. You will have to find the CSL for your specific style or write one yourself if it doesn&rsquo;t exist. Fortunately, most of the well known styles already have a CSL file created for them and you can just download it and put it in the folder along with your other files.</p>
+
+<p>One of the places where you can download CSL files is this massive repository on <a href="https://github.com/citation-style-language/styles">GitHub</a>. For this tutorial, we&rsquo;ll use the <a href="https://raw.githubusercontent.com/citation-style-language/styles/master/ieee.csl">IEEE style</a> file. You should have the following directory structure,</p>
+
+<pre><code>.
+|-- ieee.csl
+|-- myDocument.docx
+|-- myDocument.md
+`-- references.bib
+
+0 directories, 4 files
+</code></pre>
+
+<p>Now, run the following command,</p>
+
+<pre><code class="language-bash">pandoc -t docx -o myDocument.docx --smart --bibliography references.bib --filter pandoc-citeproc --csl ieee.csl myDocument.md
+</code></pre>
+
+<p>We introduce only one new command here,</p>
+
+<ul>
+<li><code>--csl</code> which is used to tell Pandoc which CSL file to use. In this case, the file is located in the same directory so we just type the name of the file.</li>
+</ul>
+
+<p>The citation style will change in both the main text and the bibliography section of your document accordingly. The following shows a preview of the bibliography section.</p>
+
+
+<figure >
+    
+        <img src="../../images/introduction-to-pandoc/docx-references-end-ieee.png" alt="Docx end-of-document bibliography in IEEE style" />
+    
+    
+    <figcaption>
+        <p>
+        Docx end-of-document bibliography in IEEE style
+        
+            
+        
+        </p> 
+    </figcaption>
+    
+</figure>
+
+
+<h1 id="yaml-front-matter">YAML Front matter</h1>
+
+<p>This section will introduce you to <a href="https://en.wikipedia.org/wiki/YAML">YAML</a> (Yet Another Markup Language) front matter which you can use to simplify the commands used to generate your document and also to add meta data to your document. Building on the previous example, we have the following markdown file with YAML front matter (forgive the syntax highlighting),</p>
+
+<pre><code>---
+title: The Title of your Document
+author: Author Name
+date: 1 Rabiul Awal 1438
+institution: Madrasah al-Jawziyyah
+abstract: This is the abstract. Here is something interesting \
+          about my paper. Please look at my results. Please   \
+          cite me in your work. I'm worth reading.
+keywords: first, second, third, last
+bibliography: references.bib
+csl: ieee.csl
+---
+
+# Introduction
+
+@mell2011nist says that, **Lorem** ipsum dolor sit _amet_, &quot;consectetur&quot;
+adipisicing elit. Veritatis, quidem facere incidunt quae velit sit repellendus
+perferendis! Vel, deleniti nulla hic eaque, quibusdam obcaecati molestias,
+maxime similique sint quos harum.
+
+. . .
+</code></pre>
+
+<p>As can be seen from the example, the YAML section is surrounded with three dashes <code>---</code>. Within this section, all the required variables are declared with special emphasis on <code>bibliography</code> and <code>csl</code> which were part of our command used earlier on. You can find a complete list of all the possible variables usable at <a href="http://pandoc.org/MANUAL.html#variables-set-by-pandoc">Pandoc Variables</a>. Please note that not all variables are usable in
+all formats.</p>
+
+<p>Now, on to processing our document. Notice how our command has now become much shorter,</p>
+
+<pre><code class="language-bash">pandoc -t docx -o myDocument.docx --smart  --filter pandoc-citeproc  myDocument.md
+</code></pre>
+
+<p>I&rsquo;ve highlighted the preview of the beginning of the generated document,</p>
+
+
+<figure >
+    
+        <img src="../../images/introduction-to-pandoc/docx-references-yaml.png" alt="Docx end-of-document bibliography" />
+    
+    
+    <figcaption>
+        <p>
+        Docx end-of-document bibliography
+        
+            
+        
+        </p> 
+    </figcaption>
+    
+</figure>
+
+
+<h1 id="the-end">The End</h1>
+
+<p>I hope this short introduction was enough to get you interested in using Pandoc for all your future endeavors in composing documents.</p>
+
+<!-- Citation Styles -->
+
+<!-- YAML -->
 <div class="footnotes">
 
 <hr />

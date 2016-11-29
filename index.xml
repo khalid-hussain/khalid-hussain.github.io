@@ -23,10 +23,10 @@
 &lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
 
 &lt;p&gt;This article will introduce you to a brilliant program called &lt;a href=&#34;http://www.pandoc.org&#34;&gt;Pandoc&lt;/a&gt; by
-&lt;a href=&#34;http://johnmacfarlane.net/&#34;&gt;John MacFarlane&lt;/a&gt;. Pandoc is a document converter which allows for conversion
-between different document formats. The list of supported document formats is
-overwhelming but ones which might be of universal interest are: &lt;a href=&#34;https://en.wikipedia.org/wiki/Office_Open_XML&#34;&gt;Microsoft
-Docx&lt;/a&gt;, HTML, &lt;a href=&#34;http://www.latex-project.org/about/&#34;&gt;LaTeX&lt;/a&gt;, &lt;a href=&#34;https://daringfireball.net/projects/markdown/syntax&#34;&gt;Markdown&lt;/a&gt;, and Epub.&lt;/p&gt;
+&lt;a href=&#34;http://johnmacfarlane.net/&#34;&gt;John MacFarlane&lt;/a&gt;. Pandoc is a utility that converts documents between
+different formats. The list of supported document formats is huge but
+ones which might be of universal interest are Microsoft &lt;a href=&#34;https://en.wikipedia.org/wiki/Office_Open_XML&#34;&gt;Docx&lt;/a&gt;, HTML, &lt;a href=&#34;http://www.latex-project.org/about/&#34;&gt;LaTeX&lt;/a&gt;,
+&lt;a href=&#34;https://daringfireball.net/projects/markdown/syntax&#34;&gt;Markdown&lt;/a&gt;, and Epub.&lt;/p&gt;
 
 &lt;p&gt;Pandoc may not seem that useful in the beginning but as we go through this
 article, you will come to love the different scenarios it can be applied to.&lt;/p&gt;
@@ -229,7 +229,240 @@ The following is a list of items:
 &lt;/figure&gt;
 
 
-&lt;p&gt;&lt;em&gt;To be continued&lt;/em&gt;.&lt;/p&gt;
+&lt;h1 id=&#34;citations-references&#34;&gt;Citations/References&lt;/h1&gt;
+
+&lt;p&gt;You&amp;rsquo;ll be pleased to know that Pandoc supports citations/references in its
+syntax. To use it, you&amp;rsquo;ll need a bibliography file which can be in a number of
+different formats. We&amp;rsquo;ll be using &lt;a href=&#34;http://www.bibtex.org/&#34;&gt;BibTeX&lt;/a&gt; for this tutorial. For a list of
+all possible formats, please see the &lt;a href=&#34;http://pandoc.org/MANUAL.html#citations&#34;&gt;Pandoc Citations&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;First, we&amp;rsquo;ll create our bibliography file. I&amp;rsquo;ve selected three articles from
+&lt;a href=&#34;http://scholar.google.com&#34;&gt;Google Scholar&lt;/a&gt; about Cloud Computing and created a file named
+&lt;code&gt;references.bib&lt;/code&gt;, with the following contents.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;@article{mell2011nist,
+  title={The NIST definition of cloud computing},
+  author={Mell, Peter and Grance, Tim},
+  year={2011},
+  publisher={Computer Security Division, Information Technology Laboratory, National Institute of Standards and Technology Gaithersburg}
+}
+
+@article{armbrust2010view,
+  title={A view of cloud computing},
+  author={Armbrust, Michael and Fox, Armando and Griffith, Rean and Joseph, Anthony D and Katz, Randy and Konwinski, Andy and Lee, Gunho and Patterson, David and Rabkin, Ariel and Stoica, Ion and others},
+  journal={Communications of the ACM},
+  volume={53},
+  number={4},
+  pages={50--58},
+  year={2010},
+  publisher={ACM}
+}
+
+@article{computing2011cloud,
+  title={Cloud computing privacy concerns on our doorstep},
+  author={ComPUtING, CLoUD},
+  journal={Communications of the ACM},
+  volume={54},
+  number={1},
+  pages={36--38},
+  year={2011}
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Second, we&amp;rsquo;ll cite the references using their &lt;em&gt;key&lt;/em&gt; in our source document as shown below. Pay attention to the difference when citing at the beginning and end of a sentence.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;# Introduction
+
+@mell2011nist says that, **Lorem** ipsum dolor sit _amet_, &amp;quot;consectetur&amp;quot;
+adipisicing elit. Veritatis, quidem facere incidunt quae velit sit repellendus
+perferendis! Vel, deleniti nulla hic eaque, quibusdam obcaecati molestias,
+maxime similique sint quos harum.
+
+## Background Study
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam rem, vitae
+minus provident maiores quae laborum rerum, numquam! Doloribus atque veritatis
+earum deleniti accusantium [@armbrust2010view], quidem possimus consequuntur a
+inventore minima!
+
+# Research Methodology
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab expedita impedit
+nulla fuga numquam corporis sit voluptates quo, deleniti, quam in praesentium!
+Pariatur eius, quibusdam quam et expedita quia dolores [@computing2011cloud, p.37].
+
+The following is a list of items:
+
+1. The first item
+2. The second item
+3. The third item
+
+# References
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Third, we&amp;rsquo;ll have to define a &lt;a href=&#34;http://citationstyles.org&#34;&gt;CSL (Citation Style Language)&lt;/a&gt; file. A CSL file
+defines how to style the references at the end of a document. By default,
+Pandoc uses the Chicago Manual of Style author-date format. Using different
+styles will be explained in the following subsection.&lt;/p&gt;
+
+&lt;p&gt;Finally, once everything is in place, for a &lt;code&gt;docx&lt;/code&gt; file, type the following,&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;pandoc -t docx -o myDocument.docx --smart --bibliography references.bib --filter pandoc-citeproc myDocument.md
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I&amp;rsquo;ll explain some of the new commands we&amp;rsquo;ve typed:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;--bibliography&lt;/code&gt;, a command to define the bibliography. Whatever follows this command will be the name of the bibliography file, &lt;code&gt;references.bib&lt;/code&gt; in this case.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;--filter&lt;/code&gt;, a command to define filters that would go through your source file. In this case we&amp;rsquo;re going to use &lt;code&gt;pandoc-citeproc&lt;/code&gt; to process our citations.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;This command will result in the following document content, I&amp;rsquo;ve only selected the parts that will show the effects of our citation processing.&lt;/p&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;./images/introduction-to-pandoc/docx-references-preview.png&#34; alt=&#34;Docx output with citations in main text&#34; /&gt;
+    
+    
+    &lt;figcaption&gt;
+        &lt;p&gt;
+        Docx output with citations in main text
+        
+            
+        
+        &lt;/p&gt; 
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;./images/introduction-to-pandoc/docx-references-end.png&#34; alt=&#34;Docx end-of-document bibliography&#34; /&gt;
+    
+    
+    &lt;figcaption&gt;
+        &lt;p&gt;
+        Docx end-of-document bibliography
+        
+            
+        
+        &lt;/p&gt; 
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+
+
+&lt;h2 id=&#34;different-csl-styles&#34;&gt;Different CSL styles&lt;/h2&gt;
+
+&lt;p&gt;Now on to different citation styles. You will have to find the CSL for your specific style or write one yourself if it doesn&amp;rsquo;t exist. Fortunately, most of the well known styles already have a CSL file created for them and you can just download it and put it in the folder along with your other files.&lt;/p&gt;
+
+&lt;p&gt;One of the places where you can download CSL files is this massive repository on &lt;a href=&#34;https://github.com/citation-style-language/styles&#34;&gt;GitHub&lt;/a&gt;. For this tutorial, we&amp;rsquo;ll use the &lt;a href=&#34;https://raw.githubusercontent.com/citation-style-language/styles/master/ieee.csl&#34;&gt;IEEE style&lt;/a&gt; file. You should have the following directory structure,&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;.
+|-- ieee.csl
+|-- myDocument.docx
+|-- myDocument.md
+`-- references.bib
+
+0 directories, 4 files
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now, run the following command,&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;pandoc -t docx -o myDocument.docx --smart --bibliography references.bib --filter pandoc-citeproc --csl ieee.csl myDocument.md
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;We introduce only one new command here,&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;--csl&lt;/code&gt; which is used to tell Pandoc which CSL file to use. In this case, the file is located in the same directory so we just type the name of the file.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The citation style will change in both the main text and the bibliography section of your document accordingly. The following shows a preview of the bibliography section.&lt;/p&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;./images/introduction-to-pandoc/docx-references-end-ieee.png&#34; alt=&#34;Docx end-of-document bibliography in IEEE style&#34; /&gt;
+    
+    
+    &lt;figcaption&gt;
+        &lt;p&gt;
+        Docx end-of-document bibliography in IEEE style
+        
+            
+        
+        &lt;/p&gt; 
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+
+
+&lt;h1 id=&#34;yaml-front-matter&#34;&gt;YAML Front matter&lt;/h1&gt;
+
+&lt;p&gt;This section will introduce you to &lt;a href=&#34;https://en.wikipedia.org/wiki/YAML&#34;&gt;YAML&lt;/a&gt; (Yet Another Markup Language) front matter which you can use to simplify the commands used to generate your document and also to add meta data to your document. Building on the previous example, we have the following markdown file with YAML front matter (forgive the syntax highlighting),&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;---
+title: The Title of your Document
+author: Author Name
+date: 1 Rabiul Awal 1438
+institution: Madrasah al-Jawziyyah
+abstract: This is the abstract. Here is something interesting \
+          about my paper. Please look at my results. Please   \
+          cite me in your work. I&#39;m worth reading.
+keywords: first, second, third, last
+bibliography: references.bib
+csl: ieee.csl
+---
+
+# Introduction
+
+@mell2011nist says that, **Lorem** ipsum dolor sit _amet_, &amp;quot;consectetur&amp;quot;
+adipisicing elit. Veritatis, quidem facere incidunt quae velit sit repellendus
+perferendis! Vel, deleniti nulla hic eaque, quibusdam obcaecati molestias,
+maxime similique sint quos harum.
+
+. . .
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;As can be seen from the example, the YAML section is surrounded with three dashes &lt;code&gt;---&lt;/code&gt;. Within this section, all the required variables are declared with special emphasis on &lt;code&gt;bibliography&lt;/code&gt; and &lt;code&gt;csl&lt;/code&gt; which were part of our command used earlier on. You can find a complete list of all the possible variables usable at &lt;a href=&#34;http://pandoc.org/MANUAL.html#variables-set-by-pandoc&#34;&gt;Pandoc Variables&lt;/a&gt;. Please note that not all variables are usable in
+all formats.&lt;/p&gt;
+
+&lt;p&gt;Now, on to processing our document. Notice how our command has now become much shorter,&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;pandoc -t docx -o myDocument.docx --smart  --filter pandoc-citeproc  myDocument.md
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I&amp;rsquo;ve highlighted the preview of the beginning of the generated document,&lt;/p&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;./images/introduction-to-pandoc/docx-references-yaml.png&#34; alt=&#34;Docx end-of-document bibliography&#34; /&gt;
+    
+    
+    &lt;figcaption&gt;
+        &lt;p&gt;
+        Docx end-of-document bibliography
+        
+            
+        
+        &lt;/p&gt; 
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+
+
+&lt;h1 id=&#34;the-end&#34;&gt;The End&lt;/h1&gt;
+
+&lt;p&gt;I hope this short introduction was enough to get you interested in using Pandoc for all your future endeavors in composing documents.&lt;/p&gt;
+
+&lt;!-- Citation Styles --&gt;
+
+&lt;!-- YAML --&gt;
 &lt;div class=&#34;footnotes&#34;&gt;
 
 &lt;hr /&gt;
