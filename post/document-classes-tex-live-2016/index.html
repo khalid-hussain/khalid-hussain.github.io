@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Document classes in TeX Live 2016 | Khalid Hussain</title>
+<link rel="stylesheet" href="../../css/style.css">
+
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/default.min.css">
+
+
+<section class="section">
+  <div class="container">
+    <nav class="nav">
+      <div class="nav-left">
+        <a class="nav-item" href="http://khalid-hussain.github.io"><h1 class="title is-4">Khalid Hussain</h1></a>
+      </div>
+      <div class="nav-right">
+        <nav class="nav-item level is-mobile">
+          
+          <a class="level-item" href="https://github.com/khalid-hussain">
+            <span class="icon">
+              <i class="fa fa-github"></i>
+            </span>
+          </a>
+          
+          <a class="level-item" href="https://twitter.com/t_khalidhussain">
+            <span class="icon">
+              <i class="fa fa-twitter"></i>
+            </span>
+          </a>
+          
+          <a class="level-item" href="../../index.xml">
+            <span class="icon">
+              <i class="fa fa-rss"></i>
+            </span>
+          </a>
+          
+        </nav>
+      </div>
+    </nav>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2 class="subtitle is-6">December 1, 2016</h2>
+    <h1 class="title">Document classes in TeX Live 2016</h1>
+    <div class="content">
+      <p>I recently started teaching <a href="https://www.latex-project.org/">LaTeX</a> to a friend. I had given him a copy of
+<a href="https://www.tug.org/texlive/">TeX Live 2016</a> since Internet is unstable where we are and MikTeX creates the
+hassle of installing packages that might be needed as you progress.</p>
+
+<p>After going through some of the basics, he asked about all of the possible
+document classes that  can be used. At that time, I only knew about <code>article</code>,
+<code>report</code>, <code>book</code>, <code>IEEEtran</code> and <code>memoir</code>. Custom classes would have their own
+definition but these were all that I had used till now.</p>
+
+<p>I didn&rsquo;t know the answer, so I searched and the answer was avaiable on
+<a href="http://tex.stackexchange.com/">TeX.SE</a>. The question asked was <a href="http://tex.stackexchange.com/questions/56009/how-to-print-the-list-of-packages-installed-on-tex-live-to-a-file">How to print the list of packages installed
+on TeX Live to a file?</a> Unfortunately, the answer was aimed at *NIX systems
+only.</p>
+
+<p>Fortunately, the solution can be partly adapted for Windows. I found the
+required <code>ls-R</code> file at <code>C:\texlive\2016\texmf-dist</code>. I&rsquo;ve got <a href="https://git-scm.com/downloads">Git Bash</a>
+installed along with <a href="http://www.mingw.org/">MinGW</a> so <code>grep</code> would not be a problem.</p>
+
+<p>I copied the <code>ls-R</code> file to the Desktop and ran the following from Git Bash,</p>
+
+<pre><code class="language-bash">grep &quot;\.cls&quot;$ ls-R | sort &gt; latex_classes.txt
+</code></pre>
+
+<p>The command takes all the entries in the file that end with <code>.cls</code> (document
+class extension), sorts them alphabetically, and then saves them into the
+<code>latex_classes.txt</code> file.</p>
+
+<p>The contents of <code>latex_classes.txt</code> can be found after this paragraph. If you
+know what any of the classes are for, please do leave a comment.</p>
+
+<script src="//gist.github.com/khalid-hussain/5d48b0368c7623f2c4b23b95fe2df299.js"></script>
+
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <aside><div id="disqus_thread"></div></aside>
+    <script type="text/javascript">
+      var disqus_shortname = 'khalid-hussain-github-io';
+      (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container has-text-centered">
+    <p>&copy; <a href="https://github.com/khalid-hussain">Khalid Hussain</a> 1438</p>
+  </div>
+</section>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/highlight.min.js"></script>
+
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-58223270-2', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='//www.google-analytics.com/analytics.js'></script>
+
+
+

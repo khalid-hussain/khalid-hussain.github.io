@@ -7,8 +7,48 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; &lt;a href=&#34;https://github.com/khalid-hussain&#34;&gt;Khalid Hussain&lt;/a&gt; 1438</copyright>
-    <lastBuildDate>Fri, 04 Nov 2016 22:49:21 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 01 Dec 2016 21:35:44 +0800</lastBuildDate>
     <atom:link href="http://khalid-hussain.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Document classes in TeX Live 2016</title>
+      <link>http://khalid-hussain.github.io/post/document-classes-tex-live-2016/</link>
+      <pubDate>Thu, 01 Dec 2016 21:35:44 +0800</pubDate>
+      
+      <guid>http://khalid-hussain.github.io/post/document-classes-tex-live-2016/</guid>
+      <description>&lt;p&gt;I recently started teaching &lt;a href=&#34;https://www.latex-project.org/&#34;&gt;LaTeX&lt;/a&gt; to a friend. I had given him a copy of
+&lt;a href=&#34;https://www.tug.org/texlive/&#34;&gt;TeX Live 2016&lt;/a&gt; since Internet is unstable where we are and MikTeX creates the
+hassle of installing packages that might be needed as you progress.&lt;/p&gt;
+
+&lt;p&gt;After going through some of the basics, he asked about all of the possible
+document classes that  can be used. At that time, I only knew about &lt;code&gt;article&lt;/code&gt;,
+&lt;code&gt;report&lt;/code&gt;, &lt;code&gt;book&lt;/code&gt;, &lt;code&gt;IEEEtran&lt;/code&gt; and &lt;code&gt;memoir&lt;/code&gt;. Custom classes would have their own
+definition but these were all that I had used till now.&lt;/p&gt;
+
+&lt;p&gt;I didn&amp;rsquo;t know the answer, so I searched and the answer was avaiable on
+&lt;a href=&#34;http://tex.stackexchange.com/&#34;&gt;TeX.SE&lt;/a&gt;. The question asked was &lt;a href=&#34;http://tex.stackexchange.com/questions/56009/how-to-print-the-list-of-packages-installed-on-tex-live-to-a-file&#34;&gt;How to print the list of packages installed
+on TeX Live to a file?&lt;/a&gt; Unfortunately, the answer was aimed at *NIX systems
+only.&lt;/p&gt;
+
+&lt;p&gt;Fortunately, the solution can be partly adapted for Windows. I found the
+required &lt;code&gt;ls-R&lt;/code&gt; file at &lt;code&gt;C:\texlive\2016\texmf-dist&lt;/code&gt;. I&amp;rsquo;ve got &lt;a href=&#34;https://git-scm.com/downloads&#34;&gt;Git Bash&lt;/a&gt;
+installed along with &lt;a href=&#34;http://www.mingw.org/&#34;&gt;MinGW&lt;/a&gt; so &lt;code&gt;grep&lt;/code&gt; would not be a problem.&lt;/p&gt;
+
+&lt;p&gt;I copied the &lt;code&gt;ls-R&lt;/code&gt; file to the Desktop and ran the following from Git Bash,&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;grep &amp;quot;\.cls&amp;quot;$ ls-R | sort &amp;gt; latex_classes.txt
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The command takes all the entries in the file that end with &lt;code&gt;.cls&lt;/code&gt; (document
+class extension), sorts them alphabetically, and then saves them into the
+&lt;code&gt;latex_classes.txt&lt;/code&gt; file.&lt;/p&gt;
+
+&lt;p&gt;The contents of &lt;code&gt;latex_classes.txt&lt;/code&gt; can be found after this paragraph. If you
+know what any of the classes are for, please do leave a comment.&lt;/p&gt;
+
+&lt;script src=&#34;//gist.github.com/khalid-hussain/5d48b0368c7623f2c4b23b95fe2df299.js&#34;&gt;&lt;/script&gt;
+</description>
+    </item>
     
     <item>
       <title>Introduction to Pandoc</title>
