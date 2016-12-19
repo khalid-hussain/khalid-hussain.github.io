@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Khalid Hussain</title>
+    <link>http://khalid-hussain.github.io/tags/10/index.xml</link>
+    <description>Recent content on Khalid Hussain</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; &lt;a href=&#34;https://github.com/khalid-hussain&#34;&gt;Khalid Hussain&lt;/a&gt; 1438</copyright>
+    <atom:link href="http://khalid-hussain.github.io/tags/10/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Good Things about Windows 10</title>
+      <link>http://khalid-hussain.github.io/post/good-things-about-windows-10/</link>
+      <pubDate>Wed, 07 Dec 2016 20:23:23 +0800</pubDate>
+      
+      <guid>http://khalid-hussain.github.io/post/good-things-about-windows-10/</guid>
+      <description>
+
+&lt;p&gt;Microsoft had a hard time convincing their customers about the advantages of
+the Windows 8 family. It seemed like it was poorly done, akin to slapping a
+tablet UI over Windows 7.&lt;/p&gt;
+
+&lt;p&gt;I personally skipped the whole Windows 8 family and was initially reluctant to
+switch to Windows 10 from the tried and tested Windows 7 (with Service Pack).
+It was not until a friend of mine had Windows 10 installed and informed me of
+his experience that I decided to try it out. Ironically, he too was avoiding
+Windows 10 but on one (un)fortunate day, he woke up to his computer having
+installed Windows 10 by itself. He was both surprised and disappointed, at
+first.&lt;/p&gt;
+
+&lt;h1 id=&#34;start-menu&#34;&gt;Start Menu&lt;/h1&gt;
+
+&lt;p&gt;I can&amp;rsquo;t believe this is still something debatable. Windows 8 took away the
+start menu button causing confusion and frustration for both tablet and
+computer users. They brought it back in 8.1 but the damage had been done by
+then.&lt;/p&gt;
+
+&lt;p&gt;The start menu itself was obnoxious, taking over your whole screen, hiding all
+open windows. The addition of all the &amp;ldquo;Live&amp;rdquo; tiles seemed to put a dent into
+productivity, at least, mine. Something was always changing, updating,
+requiring my attention.&lt;/p&gt;
+
+&lt;p&gt;Windows 10 changed all of that. It no longer takes up all of the screen.
+&amp;ldquo;Live&amp;rdquo; tiles can be removed to provide a slick menu. I&amp;rsquo;ve never really
+scrolled through the menu to find stuff as I always just start typing what I
+want after pressing the &lt;code&gt;Windows&lt;/code&gt; key. The &lt;code&gt;Windows + S&lt;/code&gt; shortcut has made
+this even faster.&lt;/p&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;../../images/good-things-about-windows-10/start-menu.png&#34; alt=&#34;My Start Menu&#34; /&gt;
+    
+    
+    &lt;figcaption&gt;
+        &lt;p&gt;
+        My Start Menu
+        
+            
+        
+        &lt;/p&gt; 
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+
+
+&lt;h1 id=&#34;notifications-centre&#34;&gt;Notifications Centre&lt;/h1&gt;
+
+&lt;p&gt;Windows 10 has a central notifications panel that can be accessed by clicking
+on the message icon at the bottom-left of the screen or by pressing &lt;code&gt;Windows +
+A&lt;/code&gt;. All notifications stack up here and appropriate actions can be taken. It&amp;rsquo;s
+useful for making sure you don&amp;rsquo;t miss important notifications.&lt;/p&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;../../images/good-things-about-windows-10/notifications-center.png&#34; alt=&#34;Notifications Center&#34; /&gt;
+    
+    
+    &lt;figcaption&gt;
+        &lt;p&gt;
+        Notifications Center
+        
+            
+        
+        &lt;/p&gt; 
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+
+
+&lt;h1 id=&#34;people-app&#34;&gt;People App&lt;/h1&gt;
+
+&lt;p&gt;The People app enables you to store information about your contacts. I haven&amp;rsquo;t
+used the app by itself, but the feature I found the most useful is the
+integration with Google Contacts. This is significant as all my contacts on my
+Android phone are synced with my Google account. Thus, you get access to all
+your contacts even if your phone is not on you at the moment.&lt;/p&gt;
+
+&lt;h1 id=&#34;hijri-calendar&#34;&gt;Hijri Calendar&lt;/h1&gt;
+
+&lt;p&gt;This is the feature I&amp;rsquo;ve come to appreciate the most. Windows 10 allows you to
+set a Hijri calendar as your main calendar. This can be accessed from the
+bottom-right of the taskbar. Although this was possible before, you can now
+access both Hijri and Gregorian calendars through the Calendar app.&lt;/p&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;../../images/good-things-about-windows-10/hijri-calendar.png&#34; alt=&#34;Taskbar Hijri calendar popup&#34; /&gt;
+    
+    
+    &lt;figcaption&gt;
+        &lt;p&gt;
+        Taskbar Hijri calendar popup
+        
+            
+        
+        &lt;/p&gt; 
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+
+
+&lt;h1 id=&#34;calendar-app&#34;&gt;Calendar App&lt;/h1&gt;
+
+&lt;p&gt;The Calendar app in Windows 10 is quite brilliant. It enables syncing with
+your Google account. This is great if you have an Android phone which is also
+synced with your Google account. Adding events are a breeze, as is adding
+reminders. You can also assign a location for each event and invite other
+users to the created event.&lt;/p&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;../../images/good-things-about-windows-10/calendar-app.png&#34; alt=&#34;Calendar app displaying both calendars&#34; /&gt;
+    
+    
+    &lt;figcaption&gt;
+        &lt;p&gt;
+        Calendar app displaying both calendars
+        
+            
+        
+        &lt;/p&gt; 
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+
+
+&lt;h1 id=&#34;command-prompt&#34;&gt;Command Prompt&lt;/h1&gt;
+
+&lt;p&gt;The command prompt has been improved greatly over that in Windows 7. If any of
+you have used one for a while, you&amp;rsquo;d realize that you couln&amp;rsquo;t easily resize or
+even make fullscreen the command prompt in Windows 7. This has changed in
+Windows 10 however it is still way behind the terminals of both Linux and OSX
+operating systems.&lt;/p&gt;
+
+&lt;h1 id=&#34;virtual-desktops&#34;&gt;Virtual Desktops&lt;/h1&gt;
+
+&lt;p&gt;Not to be confused with Virtual Operating Systems. Virtual desktops have been around on Linux and OSX systems for quite some time now. Windows 10 just caught up in this department.&lt;/p&gt;
+
+&lt;p&gt;It is activated using &lt;code&gt;Windows + TAB&lt;/code&gt;. The virtual desktops are shown in the bottom row. If activating for the first time, you will have no virtual desktops shown. To add a new virtual desktop, press on the “New Desktop” button.&lt;/p&gt;
+
+&lt;p&gt;You can move windows into the new desktop by dragging with the mouse cursor. You can swap into the other virtual desktops by clicking on their preview. Alternatively, you may use the &lt;code&gt;Ctrl + Windows + &amp;lt;left, right&amp;gt;&lt;/code&gt; keyboard shortcut combination.&lt;/p&gt;
+
+&lt;h1 id=&#34;editing-paths&#34;&gt;Editing PATHs&lt;/h1&gt;
+
+&lt;p&gt;If you&amp;rsquo;ve done a certain level of development on Windows, you will have come across this task. Editing environment variables in Windows 7 can be a pain, especially if the value is already saturated. Windows 10 improved the environment variable menu. Everything can be viewed and edited with ease.&lt;/p&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;../../images/good-things-about-windows-10/edit-path-window.png&#34; alt=&#34;Edit Path Dialogs&#34; /&gt;
+    
+    
+    &lt;figcaption&gt;
+        &lt;p&gt;
+        Edit Path Dialogs
+        
+            
+        
+        &lt;/p&gt; 
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+
+
+&lt;h1 id=&#34;end&#34;&gt;End&lt;/h1&gt;
+
+&lt;p&gt;I&amp;rsquo;ll populate this list as I find other good things Insha&amp;rsquo;Allah.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
