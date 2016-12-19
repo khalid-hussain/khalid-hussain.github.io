@@ -1,0 +1,24 @@
+= Khalid's Java Notes
+Khalid Hussain
+:page-layout: docs
+:page-javascripts: [view-result]
+:source-highlighter: highlight.js
+:highlightjsdir: highlight
+:description: Khalid's Java Notes
+:toc: left
+:toc-title: Contents
+:toclevels: 4
+:sectnums:
+:setanchors:
+
+[[hash-map]]
+Hash Map
+--------
+
+[source,java]
+----
+Integer myInteger = 10;
+HashMap <String, Integer> myHashMap = new HashMap <String, Integer>();
+myHashMap.put("My String", myInteger);
+myHashMap.size();
+----
