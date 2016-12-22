@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Khalid Hussain</title>
+    <link>http://khalid-hussain.github.io/tags/acrobat/index.xml</link>
+    <description>Recent content on Khalid Hussain</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; &lt;a href=&#34;https://github.com/khalid-hussain&#34;&gt;Khalid Hussain&lt;/a&gt; 1438</copyright>
+    <atom:link href="http://khalid-hussain.github.io/tags/acrobat/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Enable keyboard shortcuts in Adobe Acrobat Reader DC</title>
+      <link>http://khalid-hussain.github.io/post/enable-keyboard-shortcuts-in-adobe-acrobat-reader/</link>
+      <pubDate>Thu, 22 Dec 2016 07:02:53 +0800</pubDate>
+      
+      <guid>http://khalid-hussain.github.io/post/enable-keyboard-shortcuts-in-adobe-acrobat-reader/</guid>
+      <description>&lt;p&gt;I use Adobe Acrobat Reader DC on a daily basis and use it to copy text from,
+highlight text in, and add comments to PDF files. Adobe thought it would be a
+good idea to disable keyboard shortcuts as the default option. I don&amp;rsquo;t know
+why this is so.&lt;/p&gt;
+
+&lt;p&gt;Anyway, on to the remedy. The version of Adobe Acrobat Reader DC I&amp;rsquo;m using for
+this tutorial is &lt;code&gt;15.020.20042&lt;/code&gt;. Access the Preferences via &lt;code&gt;Edit &amp;gt; Preferences&lt;/code&gt;
+or the keyboard shortcut &lt;code&gt;Ctrl + K&lt;/code&gt;.&lt;/p&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;../../images/enable-keyboard-shortcuts-in-adobe-acrobat-reader/adobe-reader-menu.png&#34; alt=&#34;Acrobat Reader Edit Menu&#34; /&gt;
+    
+    
+    &lt;figcaption&gt;
+        &lt;p&gt;
+        Acrobat Reader Edit Menu
+        
+            
+        
+        &lt;/p&gt; 
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+
+
+&lt;p&gt;Go to the &lt;em&gt;General&lt;/em&gt; category and tick the &lt;em&gt;Use single-key accelerators to
+access tools&lt;/em&gt; option as shown below. Yes, you read that right, keyboard
+shortcuts are now called &lt;em&gt;single-key accelerators&lt;/em&gt;. Whose idea was that? They
+should be fired. This change in name was why it took me longer than usual to
+find this option.&lt;/p&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;../../images/enable-keyboard-shortcuts-in-adobe-acrobat-reader/adobe-preferences-window.png&#34; alt=&#34;Acrobat Reader Preferences Window&#34; /&gt;
+    
+    
+    &lt;figcaption&gt;
+        &lt;p&gt;
+        Acrobat Reader Preferences Window
+        
+            
+        
+        &lt;/p&gt; 
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+
+
+&lt;!-- On a side note, George Carlin highlights change of language in the following video. --&gt;
+
+&lt;!-- 
+&lt;div class=&#34;youtube-video&#34;&gt;
+  &lt;iframe src=&#34;//www.youtube.com/embed/o25I2fzFGoY&#34; allowfullscreen frameborder=&#34;0&#34;&gt;&lt;/iframe&gt;
+ &lt;/div&gt;
+ --&gt;
+
+&lt;p&gt;If this is the first time you&amp;rsquo;ve opened the Preferences, take a look around,
+you might find other things that make your life easier. You and I both know,
+that you&amp;rsquo;ll probably look for a new PDF viewer before checking here to curb Acrobat
+Reader woes.&lt;/p&gt;
+
+&lt;p&gt;Now that you&amp;rsquo;ve enabled &lt;em&gt;single-key accelerators&lt;/em&gt;, here&amp;rsquo;s a list of the common
+tools I use with their respective &lt;em&gt;accelerators&lt;/em&gt;.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;V&lt;/code&gt; Select Tool. The cursor icon in the toolbar.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;H&lt;/code&gt; Hand Tool.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;U&lt;/code&gt; Highlight Tool.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Ctrl + E&lt;/code&gt; Not an &lt;em&gt;accelerator&lt;/em&gt; per se. Opens the selected Tool properties and changes when the Tool changes. Used in conjunction with the Highlight tool enables one to change colors.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!-- 
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;//www.youtube.com/embed/o25I2fzFGoY&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%;&#34; allowfullscreen frameborder=&#34;0&#34;&gt;&lt;/iframe&gt;
+ &lt;/div&gt;
+ --&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
