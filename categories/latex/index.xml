@@ -10,6 +10,17 @@
     <atom:link href="http://khalid-hussain.github.io/categories/latex/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Mushaf for Kindle Paperwhite 3</title>
+      <link>http://khalid-hussain.github.io/post/mushaf-for-kindle-paperwhite-3/</link>
+      <pubDate>Wed, 07 Dec 2016 22:25:34 +0800</pubDate>
+      
+      <guid>http://khalid-hussain.github.io/post/mushaf-for-kindle-paperwhite-3/</guid>
+      <description>&lt;p&gt;Arabic rendering on Amazon&amp;rsquo;s Kindles is quite problematic if not ugly. Vowels
+and custom publisher fonts are some of the complications.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Document classes in TeX Live 2016</title>
       <link>http://khalid-hussain.github.io/post/document-classes-tex-live-2016/</link>
       <pubDate>Thu, 01 Dec 2016 21:35:44 +0800</pubDate>
