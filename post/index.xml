@@ -1418,45 +1418,5 @@ suggestions or comments, please send them directly to my GitHub account.&lt;/p&g
 </description>
     </item>
     
-    <item>
-      <title>Welcome</title>
-      <link>http://khalid-hussain.github.io/post/good-to-great/</link>
-      <pubDate>Sat, 08 Oct 2016 12:33:41 +0800</pubDate>
-      
-      <guid>http://khalid-hussain.github.io/post/good-to-great/</guid>
-      <description>&lt;p&gt;Welcome to my blog. This is my first attempt at a blog. I&amp;rsquo;ll document interesting things I come across. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque rerum sequi libero eveniet tempore nostrum deleniti, cum iusto ullam maiores id odio aut earum incidunt vel! Atque totam, odio possimus? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis sunt, et eos perspiciatis at officia omnis, libero, ipsum sed similique esse praesentium amet quae aliquid id aspernatur saepe facere labore.&lt;/p&gt;
-
-&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid voluptas ut earum enim itaque harum commodi corporis nam quasi, dolor iusto placeat minus provident eum! Nostrum placeat soluta omnis possimus. Testing SVG images,&lt;/p&gt;
-
-
-&lt;figure &gt;
-    
-        &lt;img src=&#34;../images/output.svg&#34; alt=&#34;Steve Francia&#34; /&gt;
-    
-    
-    &lt;figcaption&gt;
-        &lt;p&gt;
-        Steve Francia
-        
-            
-        
-        &lt;/p&gt; 
-    &lt;/figcaption&gt;
-    
-&lt;/figure&gt;
-
-
-&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;int main(){
-  cout &amp;lt;&amp;lt; &amp;quot;Hello World!&amp;quot; &amp;lt;&amp;lt; endl;
-  return 0;
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Testing&lt;/p&gt;
-
-&lt;img src=&#34;../../images/1.jpg&#34; alt=&#34;&#34; class=&#34;pannable-image&#34;&gt;
-</description>
-    </item>
-    
   </channel>
 </rss>
